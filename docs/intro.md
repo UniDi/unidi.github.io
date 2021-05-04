@@ -2,11 +2,15 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# UniDi Documentation 
 
-Let's discover **Docusaurus in less than 5 minutes**.
+| Get started||
+|--|--|
+|Introduction||
+|Hello, World!||
 
-## Getting Started
+
+## Get Started
 
 Get started by **creating a new site**.
 

@@ -7,11 +7,15 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'UniDi', // Usually your GitHub org/user name.
+  projectName: 'Dependency Injection for Unity', // Usually your repo name.
   themeConfig: {
+    prism: {
+      // additionalLanguages: ['csharp'],
+      theme: require('prism-react-renderer/themes/dracula'),
+    },
     navbar: {
-      title: 'My Site',
+      title: 'UniDi',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -21,7 +25,7 @@ module.exports = {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Docs',
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
@@ -74,7 +78,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Open Source Licensed: 04-2021  ${new Date().getFullYear()} UniDi. Built with Docusaurus.`,
+      copyright: `${new Date().getFullYear()} Open Source.`,
     },
   },
   presets: [
