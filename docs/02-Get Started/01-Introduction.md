@@ -1,3 +1,8 @@
+---
+title: Introduction
+description: An Introcuction to dependency injection
+---
+
 # Introduction
 
 ## What is Dependency Injection?
@@ -16,7 +21,7 @@ What follows is a general overview of Dependency Injection from my perspective. 
 
 When writing an individual class to achieve some functionality, it will likely need to interact with other classes in the system to achieve its goals. One way to do this is to have the class itself create its dependencies, by calling concrete constructors:
 
-```cpp
+```cs
 public class Foo
 {
     ISomeService _service;
@@ -38,7 +43,7 @@ This works fine for small projects, but as your project grows it starts to get u
 
 After thinking about this, often you come to the realization that ultimately, Foo shouldn’t bother itself with the details of choosing the specific implementation of the service. All Foo should care about is fulfilling its own specific responsibilities. As long as the service fulfills the abstract interface required by Foo, Foo is happy. Our class then becomes:
 
-```cpp
+```csharp
 public class Foo
 {
     ISomeService _service;
@@ -58,7 +63,7 @@ public class Foo
 
 This is better, but now whatever class is creating Foo (let’s call it Bar) has the problem of filling in Foo’s extra dependencies:
 
-```cpp
+```cs
 public class Bar
 {
     public void DoSomething()
@@ -72,7 +77,7 @@ public class Bar
 
 And class Bar probably also doesn’t really care about what specific implementation of SomeService Foo uses. Therefore we push the dependency up again:
 
-```cpp
+```cs
 public class Bar
 {
     ISomeService _service;
@@ -93,7 +98,7 @@ public class Bar
 
 So we find that it is useful to push the responsibility of deciding which specific implementations of which classes to use further and further up in the ‘object graph’ of the application. Taking this to an extreme, we arrive at the entry point of the application, at which point all dependencies must be satisfied before things start. The dependency injection lingo for this part of the application is called the ‘composition root’. It would normally look like this:
 
-```cpp
+```cs
 var service = new SomeService();
 var foo = new Foo(service);
 var bar = new Bar(service);
