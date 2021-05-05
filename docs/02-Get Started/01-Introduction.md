@@ -1,6 +1,6 @@
 ---
 title: Introduction
-description: An Introcuction to dependency injection
+description: "An Introcuction to dependency injection"
 ---
 
 # Introduction
