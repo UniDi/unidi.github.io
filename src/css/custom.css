@@ -14,7 +14,9 @@
   --ifm-color-primary-light: rgb(70, 203, 174);
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
-  --ifm-code-font-size: 95%;
+  /* --ifm-code-font-size: 95%; */
+  --ifm-code-font-size: 85%;
+  --ifm-font-size-base: 17px;
 }
 
 .docusaurus-highlight-code-line {
@@ -22,4 +24,40 @@
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+/* Content banner */
+
+.content-banner {
+  background: #99d5e7;
+  padding: 1em 1.2em;
+  margin-bottom: 2em;
+  position: relative;
+  overflow: hidden;
+  width: calc(100% + 1em);
+  left: -1em;
+  color: var(--dark);
+}
+
+.content-banner p {
+  width: calc(75% - 2em);
+  margin: 0;
+}
+
+.content-banner-img {
+  width: 25%;
+  position: absolute;
+  top: 2em;
+  right: 2em;
+}
+
+.content-banner a:link,
+.content-banner a:visited,
+.content-banner a:hover,
+.content-banner a:active,
+.content-banner a:focus {
+  border-bottom-width: 2px;
+  background: none !important;
+  color: #134484 !important;
+  border-bottom-color: #134484 !important;
 }
