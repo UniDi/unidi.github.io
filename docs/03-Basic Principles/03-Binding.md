@@ -1,13 +1,17 @@
-# Registering objects
+---
+id: Bindings
+description: "This article explains how to use the Bind<>() method for registering dependencies into the Di-container."
+---
+
+:::tip Registering objects
 
 The core of a dependency injection framework is the DI container. In it's simplest form it's an object which contains a dictionary that holds all the _registrations_. 
-In this section we are going to cover the 'register a new mapping' part. In UniDi it's called _binding_. As it creates a binding between an _abstraction_ to a _concrete type_. 
+In this section we are going to cover the 'register a new mapping' part. In UniDi it's called _binding_. As it binds a _concrete type_ to an _abstraction_.
+::: 
 
-## Binding
+## UniDi glues everything together 
 
-Every dependency injection framework is ultimately just a framework to bind types to instances.
-
-In UniDi, dependency mapping is done by adding bindings to something called a container. The container should then 'know' how to create all the object instances in your application, by recursively resolving all dependencies for a given object.
+In UniDi, dependency mapping is done by adding bindings to something called a container. The container should then _know_ how to create all the object instances in your application, by recursively resolving all dependencies for a given object.
 
 When the container is asked to construct an instance of a given type, it uses C# reflection to find the list of constructor arguments, and all fields/properties that are marked with an [Inject] attribute. It then attempts to resolve each of these required dependencies, which it uses to call the constructor and create the new instance.
 
@@ -34,39 +38,58 @@ Container.Bind<IBar>().To<Bar>().AsSingle();
 
 This tells UniDi that every class that requires a dependency of type Foo should use the same instance, which it will automatically create when needed.  And similarly, any class that requires the IBar interface (like Foo) will be given the same instance of type Bar.
 
-The full format for the bind command is the following.  Note that in most cases you will not use all of these methods and that they all have logical defaults when unspecified
+## The bind command in full
 
-<pre>
-Container.Bind&lt;<b>ContractType</b>&gt;()
-    .WithId(<b>Identifier</b>)
-    .To&lt;<b>ResultType</b>&gt;()
-    .From<b>ConstructionMethod</b>()
-    .As<b>Scope</b>()
-    .WithArguments(<b>Arguments</b>)
-    .OnInstantiated(<b>InstantiatedCallback</b>)
-    .When(<b>Condition</b>)
-    .(<b>Copy</b>|<b>Move</b>)Into(<b>All</b>|<b>Direct</b>)SubContainers()
-    .NonLazy()
-    .IfNotBound();
-</pre>
+The full format for the bind command is the following:
+
+<div className="content-banner">
+  <pre>
+        Container.Bind&lt;<b>ContractType</b>&gt;()<br/>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .WithId(<b>Identifier</b>)<br/>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .To&lt;<b>ResultType</b>&gt;()<br/>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .From<b>ConstructionMethod</b>()<br/>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .As<b>Scope</b>()<br/>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .WithArguments(<b>Arguments</b>)<br/>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .OnInstantiated(<b>InstantiatedCallback</b>)<br/>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .When(<b>Condition</b>)<br/>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .<b>Copy</b>/<b>Move</b>Into<b>All</b>/<b>Direct</b>SubContainers()<br/>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .NonLazy()<br/>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .IfNotBound();
+  </pre>
+  <img className="content-banner-img" src="/static/img/unibot.svg" alt=" " />
+</div>
+
+:::note
+In most cases you will not use all of these methods and that they all have logical defaults when unspecified
+:::
 
 Where:
+
+### Bind<**ContractType**\>()
 
 * **ContractType** = The type that you are creating a binding for.
 
     * This value will correspond to the type of the field/parameter that is being injected.
+
+### WithId(**Identifier**)
+
+    * **Identifier** = The value to use to uniquely identify the binding.  This can be ignored in most cases, but can be quite useful in cases where you need to distinguish between multiple bindings with the same contract type. See [here](#identifiers) for details.
+
+### To<**ResultType**\>()
 
 * **ResultType** = The type to bind to.
 
     * Default: **ContractType**
     * This type must either to equal to **ContractType** or derive from **ContractType**.  If unspecified, it assumes ToSelf(), which means that the **ResultType** will be the same as the **ContractType**.  This value will be used by whatever is given as the **ConstructionMethod** to retrieve an instance of this type
 
-* **Identifier** = The value to use to uniquely identify the binding.  This can be ignored in most cases, but can be quite useful in cases where you need to distinguish between multiple bindings with the same contract type.  See [here](#identifiers) for details.
+### From**ConstructionMethod**()
 
 * **ConstructionMethod** = The method by which an instance of **ResultType** is created/retrieved.  See [this section](#construction-methods) for more details on the various construction methods.
 
     * Default: FromNew()
     * Examples: eg. FromGetter, FromMethod, FromResolve, FromComponentInNewPrefab, FromSubContainerResolve, FromInstance, etc.
+
+### As**Scope**()
 
 * **Scope** = This value determines how often (or if at all) the generated instance is re-used across multiple injections.
 
@@ -78,7 +101,12 @@ Where:
 
     * In most cases, you will likely want to just use AsSingle, however AsTransient and AsCached have their uses too.
 
+### WithArguments(**Arguments**)
+
 * **Arguments** = A list of objects to use when constructing the new instance of type **ResultType**.  This can be useful as an alternative to adding other bindings for the arguments in the form `Container.BindInstance(arg).WhenInjectedInto<ResultType>()`
+
+### OnInstantiated(**InstantiatedCallback**)
+
 * **InstantiatedCallback** = In some cases it is useful to be able customize an object after it is instantiated.  In particular, if using a third party library, it might be necessary to change a few fields on one of its types.  For these cases you can pass a method to OnInstantiated that can customize the newly created instance.  For example:
 
     ```csharp
@@ -98,8 +126,15 @@ Where:
 
     Note that you can also bind a custom factory using FromFactory that directly calls Container.InstantiateX before customizing it for the same effect, but OnInstantiated can be easier in some cases
 
+### When(**Condition**)
 * **Condition** = The condition that must be true for this binding to be chosen.  See [here](#conditional-bindings) for more details.
-* (**Copy**|**Move**)Into(**All**|**Direct**)SubContainers = This value can be ignored for 99% of users.  It can be used to automatically have the binding inherited by subcontainers.  For example, if you have a class Foo and you want a unique instance of Foo to be automatically placed in the container and every subcontainer, then you could add the following binding:
+
+### **Copy**Into**All**SubContainers()
+### **Copy**Into**Direct**SubContainers()
+### **Move**Into**All**SubContainers()
+### **Move**Into**Direct**SubContainers()
+
+* **Copy**/**Move**Into**All**/**Direct**SubContainers = This value can be ignored for 99% of users.  It can be used to automatically have the binding inherited by subcontainers.  For example, if you have a class Foo and you want a unique instance of Foo to be automatically placed in the container and every subcontainer, then you could add the following binding:
 
     ```csharp
     Container.Bind<Foo>().AsSingle().CopyIntoAllSubContainers()
@@ -119,7 +154,11 @@ Where:
     Container.Bind<Foo>().AsSingle().MoveIntoDirectSubContainers()
     ```
 
+### NonLazy()
+
 * **NonLazy** = Normally, the **ResultType** is only ever instantiated when the binding is first used (aka "lazily").  However, when NonLazy is used, **ResultType** will immediately be created on startup.
+
+### IfNotBound()
 
 * **IfNotBound** = When this is added to a binding and there is already a binding with the given contract type + identifier, then this binding will be skipped.
 
