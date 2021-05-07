@@ -11,7 +11,7 @@ module.exports = {
   projectName: 'Dependency Injection for Unity', // Usually your repo name.
   themeConfig: {
     prism: {
-      // additionalLanguages: ['csharp'],
+      additionalLanguages: ['csharp'],
       theme: require('prism-react-renderer/themes/dracula'),
     },
     navbar: {

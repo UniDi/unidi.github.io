@@ -1,161 +1,16 @@
 ---
-id: Binding
-description: "This article explains how to use the Bind<>() method for registering dependencies into the Di-container."
+id: Construction Methods
+
 ---
 
-In UniDi, dependency mapping is done by adding bindings to something called a container. The container should then _know_ how to create all the object instances in your application, by recursively resolving all dependencies for a given object.
+ConstructionMethod = The method by which an instance of ResultType is created/retrieved.
 
-When the container is asked to construct an instance of a given type, it uses C# reflection to find the list of constructor arguments, and all fields/properties that are marked with an [Inject] attribute. It then attempts to resolve each of these required dependencies, which it uses to call the constructor and create the new instance.
+## Container.Bind()
 
-Each UniDi application therefore must tell the container how to resolve each of these dependencies, which is done via Bind commands.  For example, given the following class:
+* [`.FromNew()`](#fromnew) _= default_
+* [`.FromInstance()`](#frominstance)
 
-```csharp
-public class Foo
-{
-    IBar _bar;
-
-    public Foo(IBar bar)
-    {
-        _bar = bar;
-    }
-}
-```
-
-You can wire up the dependencies for this class with the following:
-
-```csharp
-Container.Bind<Foo>().AsSingle();
-Container.Bind<IBar>().To<Bar>().AsSingle();
-```
-
-This tells UniDi that every class that requires a dependency of type Foo should use the same instance, which it will automatically create when needed.  And similarly, any class that requires the IBar interface (like Foo) will be given the same instance of type Bar.
-
-## The bind command in full
-
-The full format for the bind command is the following:
-
-<div className="content-banner">
-  <pre>
-        Container.Bind&lt;<b>ContractType</b>&gt;()<br/>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .WithId(<b>Identifier</b>)<br/>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .To&lt;<b>ResultType</b>&gt;()<br/>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .From<b>ConstructionMethod</b>()<br/>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .As<b>Scope</b>()<br/>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .WithArguments(<b>Arguments</b>)<br/>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .OnInstantiated(<b>InstantiatedCallback</b>)<br/>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .When(<b>Condition</b>)<br/>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .<b>Copy</b>/<b>Move</b>Into<b>All</b>/<b>Direct</b>SubContainers()<br/>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .NonLazy()<br/>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .IfNotBound();
-  </pre>
-  <img className="content-banner-img" src="/static/img/unibot.svg" alt=" " />
-</div>
-
-:::note
-In most cases you will not use all of these methods and that they all have logical defaults when unspecified
-:::
-
-Where:
-
-### Bind<**ContractType**\>()
-
-* **ContractType** = The type that you are creating a binding for.
-
-    * This value will correspond to the type of the field/parameter that is being injected.
-
-### WithId(**Identifier**)
-
-    * **Identifier** = The value to use to uniquely identify the binding.  This can be ignored in most cases, but can be quite useful in cases where you need to distinguish between multiple bindings with the same contract type. See [here](#identifiers) for details.
-
-### To<**ResultType**\>()
-
-* **ResultType** = The type to bind to.
-
-    * Default: **ContractType**
-    * This type must either to equal to **ContractType** or derive from **ContractType**.  If unspecified, it assumes ToSelf(), which means that the **ResultType** will be the same as the **ContractType**.  This value will be used by whatever is given as the **ConstructionMethod** to retrieve an instance of this type
-
-### From**ConstructionMethod**()
-
-* **ConstructionMethod** = The method by which an instance of **ResultType** is created/retrieved.  See [this section](#construction-methods) for more details on the various construction methods.
-
-    * Default: FromNew()
-    * Examples: eg. FromGetter, FromMethod, FromResolve, FromComponentInNewPrefab, FromSubContainerResolve, FromInstance, etc.
-
-### As**Scope**()
-
-* **Scope** = This value determines how often (or if at all) the generated instance is re-used across multiple injections.
-
-    * Default: AsTransient.  Note however that not all bindings have a default, so an exception will be thrown if not supplied.  The bindings that do not require the scope to be set explicitly are any binding with a construction method that is a search rather than creating a new object from scratch (eg. FromMethod, FromComponentX, FromResolve, etc.)
-    * It can be one of the following:
-        1. **AsTransient** - Will not re-use the instance at all.  Every time **ContractType** is requested, the DiContainer will execute the given construction method again
-        2. **AsCached** - Will re-use the same instance of **ResultType** every time **ContractType** is requested, which it will lazily generate upon first use
-        3. **AsSingle** - Exactly the same as AsCached, except that it will sometimes throw exceptions if there already exists a binding for **ResultType**.  It is simply a way to ensure that the given **ResultType** is unique within the container.  Note however that it will only guarantee that there is only one instance across the given container, which means that using AsSingle with the same binding in a sub-container could generate a second instance.
-
-    * In most cases, you will likely want to just use AsSingle, however AsTransient and AsCached have their uses too.
-
-### WithArguments(**Arguments**)
-
-* **Arguments** = A list of objects to use when constructing the new instance of type **ResultType**.  This can be useful as an alternative to adding other bindings for the arguments in the form `Container.BindInstance(arg).WhenInjectedInto<ResultType>()`
-
-### OnInstantiated(**InstantiatedCallback**)
-
-* **InstantiatedCallback** = In some cases it is useful to be able customize an object after it is instantiated.  In particular, if using a third party library, it might be necessary to change a few fields on one of its types.  For these cases you can pass a method to OnInstantiated that can customize the newly created instance.  For example:
-
-    ```csharp
-    Container.Bind<Foo>().AsSingle().OnInstantiated<Foo>(OnFooInstantiated);
-
-    void OnFooInstantiated(InjectContext context, Foo foo)
-    {
-        foo.Qux = "asdf";
-    }
-    ```
-
-    Or, equivalently:
-
-    ```csharp
-    Container.Bind<Foo>().AsSingle().OnInstantiated<Foo>((ctx, foo) => foo.Bar = "qux");
-    ```
-
-    Note that you can also bind a custom factory using FromFactory that directly calls Container.InstantiateX before customizing it for the same effect, but OnInstantiated can be easier in some cases
-
-### When(**Condition**)
-* **Condition** = The condition that must be true for this binding to be chosen.  See [here](#conditional-bindings) for more details.
-
-### **Copy**Into**All**SubContainers()
-### **Copy**Into**Direct**SubContainers()
-### **Move**Into**All**SubContainers()
-### **Move**Into**Direct**SubContainers()
-
-* **Copy**/**Move**Into**All**/**Direct**SubContainers = This value can be ignored for 99% of users.  It can be used to automatically have the binding inherited by subcontainers.  For example, if you have a class Foo and you want a unique instance of Foo to be automatically placed in the container and every subcontainer, then you could add the following binding:
-
-    ```csharp
-    Container.Bind<Foo>().AsSingle().CopyIntoAllSubContainers()
-    ```
-
-    In other words, the result will be equivalent to copying and pasting the `Container.Bind<Foo>().AsSingle()` statement into the installer for every sub-container.
-
-    Or, if you only wanted Foo in the subcontainers and not the current container:
-
-    ```csharp
-    Container.Bind<Foo>().AsSingle().MoveIntoAllSubContainers()
-    ```
-
-    Or, if you only wanted Foo to be in the immediate child subcontainer, and not the subcontainers of these subcontainers:
-
-    ```csharp
-    Container.Bind<Foo>().AsSingle().MoveIntoDirectSubContainers()
-    ```
-
-### NonLazy()
-
-* **NonLazy** = Normally, the **ResultType** is only ever instantiated when the binding is first used (aka "lazily").  However, when NonLazy is used, **ResultType** will immediately be created on startup.
-
-### IfNotBound()
-
-* **IfNotBound** = When this is added to a binding and there is already a binding with the given contract type + identifier, then this binding will be skipped.
-
-## Construction Methods
-
+### FromNew
 1. **FromNew** - Create via the C# new operator. This is the default if no construction method is specified.
 
     ```csharp
@@ -164,7 +19,8 @@ Where:
     Container.Bind<Foo>().FromNew();
     ```
 
-1. **FromInstance** - Add a given instance to the container.  Note that the given instance will not be injected in this case.  If you also want your instance to be injected at startup, see [QueueForInject](#dicontainer-methods-queueforinject)
+### FromInstance
+1. `.FromInstance()` - Add a given instance to the container.  Note that the given instance will not be injected in this case.  If you also want your instance to be injected at startup, see [QueueForInject](#dicontainer-methods-queueforinject)
 
     ```csharp
     Container.Bind<Foo>().FromInstance(new Foo());
@@ -180,6 +36,7 @@ Where:
     Container.BindInstances(5.13f, "foo", new Foo());
     ```
 
+### FromMethod
 1. **FromMethod** - Create via a custom method
 
     ```csharp
@@ -192,6 +49,7 @@ Where:
     }
     ```
 
+### FromMethodMultiple
 1. **FromMethodMultiple** - Same as FromMethod except allows returning multiple instances at once (or zero).
 
     ```csharp
@@ -209,6 +67,7 @@ Where:
     }
     ```
 
+### FromFactory
 1. **FromFactory** - Create instance using a custom factory class.  This construction method is similar to `FromMethod` except can be cleaner in cases where the logic is more complicated or requires dependencies (since the factory itself can have dependencies injected)
 
     ```csharp
@@ -224,6 +83,7 @@ Where:
     Container.Bind<Foo>().FromFactory<FooFactory>()
     ```
 
+### FromIFactory
 1. **FromIFactory** - Create instance using a custom factory class.  This is a more generic and more powerful alternative to FromFactory, because you can use any kind of construction method you want for your custom factory (unlike FromFactory which assumes `FromNew().AsCached()`)
 
     For example, you could use a factory that is a scriptable object like this:
@@ -270,6 +130,7 @@ Where:
     Container.Bind<Foo>().FromIFactory(x => x.To<FooFactory>().AsCached()).AsSingle();
     ```
 
+### From Component In New Prefab
 1. **FromComponentInNewPrefab** - Instantiate the given prefab as a new game object, inject any MonoBehaviour's on it, and then search the result for type **ResultType** in a similar way that `GetComponentInChildren` works
 
     ```csharp
@@ -280,9 +141,13 @@ Where:
 
     Note that if there are multiple matches for **ResultType** on the prefab it will only match the first one encountered just like how GetComponentInChildren works.  So if you are binding a prefab and there isn't a specific MonoBehaviour/Component that you want to bind to, you can just choose Transform and it will match the root of the prefab.
 
+### FromComponentsInNewPrefab
 1. **FromComponentsInNewPrefab** - Same as FromComponentInNewPrefab except will match multiple values or zero values.  You might use it for example and then inject `List<ContractType>` somewhere.  Can be thought of as similar to `GetComponentsInChildren`
 
-1. **FromComponentInNewPrefabResource** - Instantiate the given prefab (found at the given resource path) as a new game object, inject any MonoBehaviour's on it, and then search the result for type **ResultType** in a similar way that `GetComponentInChildren` works (in that it will return the first matching value found)
+## Component In New Prefab Resource
+### `.FromComponentInNewPrefabResource()`
+
+Instantiate the given prefab (found at the given resource path) as a new game object, inject any MonoBehaviour's on it, and then search the result for type **ResultType** in a similar way that `GetComponentInChildren` works (in that it will return the first matching value found)
 
     ```csharp
     Container.Bind<Foo>().FromComponentInNewPrefabResource("Some/Path/Foo");
@@ -290,8 +155,10 @@ Where:
 
     **ResultType** must either be an interface or derive from UnityEngine.MonoBehaviour / UnityEngine.Component in this case
 
+### FromComponentsInNewPrefabResource
 1. **FromComponentsInNewPrefabResource** - Same as FromComponentInNewPrefab except will match multiple values or zero values.  You might use it for example and then inject `List<ContractType>` somewhere.  Can be thought of as similar to `GetComponentsInChildren`
 
+### FromNewComponentOnNewGameObject
 1. **FromNewComponentOnNewGameObject** - Create a new empty game object and then instantiate a new component of the given type on it.
 
     ```csharp
@@ -300,6 +167,7 @@ Where:
 
     **ResultType** must derive from UnityEngine.MonoBehaviour / UnityEngine.Component in this case
 
+### FromNewComponentOnNewPrefab
 1. **FromNewComponentOnNewPrefab** - Instantiate the given prefab as a new game object and also instantiate a new instance of the given component on the root of the new game object.  NOTE: It is not necessary that the prefab contains a copy of the given component.
 
     ```csharp
@@ -308,6 +176,7 @@ Where:
 
     **ResultType** must derive from UnityEngine.MonoBehaviour / UnityEngine.Component in this case
 
+### FromNewComponentOnNewPrefabResource 
 1. **FromNewComponentOnNewPrefabResource** - Instantiate the given prefab (found at the given resource path) and also instantiate a new instance of the given component on the root of the new game object.  NOTE: It is not necessary that the prefab contains a copy of the given component.
 
     ```csharp
@@ -316,6 +185,7 @@ Where:
 
     **ResultType** must derive from UnityEngine.MonoBehaviour / UnityEngine.Component in this case
 
+### FromNewComponentOn
 1. **FromNewComponentOn** - Instantiate a new component of the given type on the given game object
 
     ```csharp
@@ -324,6 +194,7 @@ Where:
 
     **ResultType** must derive from UnityEngine.MonoBehaviour / UnityEngine.Component in this case
 
+### FromNewComponentSibling
 1. **FromNewComponentSibling** - Instantiate a new component of the given on the current transform.  The current transform here is taken from the object being injected, which must therefore be a MonoBehaviour derived type.
 
     ```csharp
@@ -336,6 +207,7 @@ Where:
 
     Also note that if a non-MonoBehaviour requests the given type, an exception will be thrown, since there is no current transform in that case.
 
+### FromComponentInHierarchy
 1. **FromComponentInHierarchy** - Look up the component within the scene hierarchy associated with the current context, as well as the hierarchy associated with any parent contexts.  Works similar to `GetComponentInChildren` in that it will return the first matching value found
 
     ```csharp
@@ -350,8 +222,10 @@ Where:
 
     In the case where the context is ProjectContext, it will only search within the project context prefab
 
+### FromComponentsInHierarchy
 1. **FromComponentsInHierarchy** - Same as FromComponentInHierarchy except will match multiple values or zero values.  You might use it for example and then inject `List<ContractType>` somewhere.  Can be thought of as similar to `GetComponentsInChildren`
 
+### FromComponentSibling
 1. **FromComponentSibling** - Look up the given component type by searching over the components that are attached to the current transform.  The current transform here is taken from the object being injected, which must therefore be a MonoBehaviour derived type. 
 
     ```csharp
@@ -362,8 +236,10 @@ Where:
 
     Note that if a non-MonoBehaviour requests the given type, an exception will be thrown, since there is no current transform in that case.
 
+### FromComponentsSibling
 1. **FromComponentsSibling** - Same as FromComponentSibling except will match multiple values or zero values.
 
+### FromComponentInParents
 1. **FromComponentInParents** - Look up the component by searching the current transform or any parent for the given component type.  The current transform here is taken from the object being injected, which must therefore be a MonoBehaviour derived type. 
 
     ```csharp
@@ -374,8 +250,10 @@ Where:
 
     Note that if a non-MonoBehaviour requests the given type, an exception will be thrown, since there is no current transform in that case.
 
+### FromComponentsInParents
 1. **FromComponentsInParents** - Same as FromComponentInParents except will match multiple values or zero values.  You might use it for example and then inject `List<ContractType>` somewhere
 
+### FromComponentInChildren
 1. **FromComponentInChildren** - Look up the component by searching the current transform or any child transform for the given component type.  The current transform here is taken from the object being injected, which must therefore be a MonoBehaviour derived type.   Similar to `GetComponentInChildren` in that it will return the first matching value found
 
     ```csharp
@@ -386,8 +264,10 @@ Where:
 
     Note that if a non-MonoBehaviour requests the given type, an exception will be thrown, since there is no current transform in that case.
 
+### FromComponentsInChildren
 1. **FromComponentsInChildren** - Same as FromComponentInChildren except will match multiple values or zero values.  You might use it for example and then inject `List<ContractType>` somewhere.  Can be thought of as similar to `GetComponentsInChildren`
 
+### FromNewComponentOnRoot
 1. **FromNewComponentOnRoot** - Instantiate the given component on the root of the current context.  This is most often used with GameObjectContext.
 
     ```csharp
@@ -396,14 +276,17 @@ Where:
 
     **ResultType** must derive from UnityEngine.MonoBehaviour / UnityEngine.Component in this case
 
+### FromResource
 1. **FromResource** - Create by calling the Unity3d function `Resources.Load` for **ResultType**.  This can be used to load any type that `Resources.Load` can load, such as textures, sounds, prefabs, etc.
 
     ```csharp
     Container.Bind<Texture>().WithId("Glass").FromResource("Some/Path/Glass");
     ```
 
+### FromResources
 1. **FromResources** - Same as FromResource except will match multiple values or zero values.  You might use it for example and then inject `List<ContractType>` somewhere
 
+### FromScriptableObjectResource 
 1. **FromScriptableObjectResource** - Bind directly to the scriptable object instance at the given resource path.  NOTE:  Changes to this value while inside unity editor will be saved persistently.  If this is undesirable, use FromNewScriptableObjectResource.
 
     ```csharp
@@ -414,8 +297,10 @@ Where:
     Container.Bind<Foo>().FromScriptableObjectResource("Some/Path/Foo");
     ```
 
+### FromNewScriptableObjectResource
 1. **FromNewScriptableObjectResource** - Same as FromScriptableObjectResource except it will instantiate a new copy of the given scriptable object resource.  This can be useful if you want to have multiple distinct instances of the given scriptable object resource, or if you want to ensure that the saved values for the scriptable object are not affected by changing at runtime.
 
+### FromResolve
 1. **FromResolve** - Get instance by doing another lookup on the container (in other words, calling `DiContainer.Resolve<ResultType>()`).  Note that for this to work, **ResultType** must be bound in a separate bind statement.  This construction method can be especially useful when you want to bind an interface to another interface, as shown in the below example
 
     ```csharp
@@ -435,8 +320,10 @@ Where:
     Container.Bind<IBar>().To<Foo>();
     ```
 
+### FromResolveAll
 1. **FromResolveAll** - Same as FromResolve except will match multiple values or zero values.
 
+### FromResolveGetter
 1. **FromResolveGetter&lt;ObjectType&gt;** - Get instance from the property of another dependency which is obtained by doing another lookup on the container (in other words, calling `DiContainer.Resolve<ObjectType>()` and then accessing a value on the returned instance of type **ResultType**).  Note that for this to work, **ObjectType** must be bound in a separate bind statement.
 
     ```csharp
@@ -456,8 +343,12 @@ Where:
     Container.Bind<Bar>().FromResolveGetter<Foo>(x => x.GetBar());
     ```
 
+
+### FromResolveAllGetter
 1. **FromResolveAllGetter&lt;ObjectType&gt;** - Same as FromResolveGetter except will match multiple values or zero values.
 
+
+### FromSubContainerResolve
 1. **FromSubContainerResolve** - Get **ResultType** by doing a lookup on a subcontainer.  Note that for this to work, the sub-container must have a binding for **ResultType**.  This approach can be very powerful, because it allows you to group related dependencies together inside a mini-container, and then expose only certain classes (aka ["Facades"](https://en.wikipedia.org/wiki/Facade_pattern)) to operate on this group of dependencies at a higher level.  For more details on using sub-containers, see [this section](#sub-containers-and-facades).  There are several ways to define the subcontainer:
 
     1. **ByNewPrefabMethod** - Initialize subcontainer by instantiating a new prefab.  Note that unlike `ByNewContextPrefab`, this bind method does not require that there be a GameObjectContext attached to the prefab.  In this case the GameObjectContext is added dynamically and then run with the given installer method.
@@ -587,7 +478,7 @@ Where:
         Container.Bind<Foo>().FromSubContainerResolve().ByNewContextPrefab(MyPrefab);
 
         // Assuming here that this installer is added to the GameObjectContext at the root
-        // of the prefab.  You could also use a UniDiBinding in the case where Foo is a MonoBehaviour
+        // of the prefab.  You could also use a ZenjectBinding in the case where Foo is a MonoBehaviour
         class FooFacadeInstaller : MonoInstaller
         {
             public override void InstallBindings()
@@ -605,4 +496,6 @@ Where:
 
     1. **ByInstance** - Initialize the subcontainer by directly using a given instance of DiContainer that you provide yourself.  This is only useful in some rare edge cases.
 
+
+### FromSubContainerResolveAll
 1. **FromSubContainerResolveAll** - Same as FromSubContainerResolve except will match multiple values or zero values.
