@@ -23,7 +23,7 @@ Or create an instance with a total custom method.
 * [Instances `.FromInstances(args)`](#instance)
 * [Method `.FromMethod(method)`](#method)
 * [Method Returning Multiple Instances `.FromMethodMultiple(method)`](#method-multiple-instances)
-* [Custom Factory `.FromFactory(Factory)`](#factory)
+* [UniDi Factory `.FromFactory(factory)`](#factory)
 * [Generic IFactory `.FromIFactory(constructionmethod)`](#ifactory)
 * [Component In Prefab `.FromComponentInNewPrefab(prefab)`](#component-in-new-prefab)
 * [`.FromComponentsInNewPrefab()`](#components-in-new-prefab)
@@ -52,11 +52,18 @@ Or create an instance with a total custom method.
 * [`.FromResolveGetter()`](#resolve-getter)
 * [`.FromResolveAllGetter()`](#resolve-all-getter)
 * [`.FromSubContainerResolve()`](#subcontainer-resolve)
-* [`.ByNewPrefabMethod()`](#bynewprefabmethod)
-* [``](#)
-* [``](#)
-* [``](#)
-* [``](#)
+  * [`.ByNewPrefabMethod()`](#bynewprefabmethod)
+  * [`.ByNewPrefabInstaller()`](#bynewprefabinstaller`)
+  * [`.ByNewPrefabResourceMethod()`](#bynewprefabresourcemethod)
+  * [`.ByNewPrefabResourceInstaller()`](#bynewprefabresourceinstaller)
+  * [`.ByNewGameObjectInstaller()`](#bynewgameobjectinstaller)
+  * [`.ByNewGameObjectMethod()`](#bynewgameobjectmethod)
+  * [`.ByMethod()`](#bymethod)
+  * [`.ByInstaller()`](#byinstaller)
+  * [`.ByNewContextPrefab()`](#bynewcontextprefab)
+  * [`.ByNewContextPrefabResource()`](#bynewcontextprefabresource)
+  * [`.ByInstance()`](#byinstance())
+* [`.FromSubContainerResolveAll()`](#fromsubcontainerresolveall)
 
 ## New
 ### `.FromNew()`
@@ -64,7 +71,7 @@ Or create an instance with a total custom method.
 Create via the C# new operator. This is the default if no construction method is specified.
 
 ```csharp
-// These are both the same
+// These are both the same:
 Container.Bind<Foo>();
 Container.Bind<Foo>().FromNew();
 ```
@@ -72,7 +79,7 @@ Container.Bind<Foo>().FromNew();
 <br/> 
 
 ![HR](/img/hr.svg)
-## Instance
+## Instance(s)
 ### `.FromInstance(arg)`
 ### `.FromInstances(args)`
 
@@ -81,7 +88,8 @@ Add a given instance to the container.
 ```csharp
 Container.Bind<Foo>().FromInstance(new Foo());
 
-// You can also use this short hand which just takes ContractType from the parameter type
+// You can also use this short hand which just 
+// takes ContractType from the parameter type
 Container.BindInstance(new Foo());
 
 // This is also what you would typically use for primitive types
@@ -93,6 +101,7 @@ Container.BindInstances(5.13f, "foo", new Foo());
 ```
 :::caution Note
 In this particular case the given instance will not be injected. If you want your instance to be injected at startup, see [QueueForInject](#dicontainer-methods-queueforinject).
+TODO: update link
 :::
 
 <br/> 
@@ -139,8 +148,8 @@ IEnumerable<Foo> GetFoos(InjectContext context)
 <br/> 
 
 ![HR](/img/hr.svg)
-## Factory
-### `.FromFactory(Factory)`
+## FromFactory
+### `.FromFactory<>()`
 
 Create an instance using a custom factory class. This construction method is similar to `FromMethod` except can be cleaner in cases where the logic is more complicated or requires dependencies (since the factory itself can have dependencies injected).
 
