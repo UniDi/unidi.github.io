@@ -6,14 +6,20 @@ description: "An Introcuction to dependency injection"
 # Introduction
 
 ## What is Dependency Injection?
-
-**Dependency injection** is a technique in which an object receives other objects that it depends on. These other objects are called dependencies. In the typical _using_ relationship the receiving object is called a client and the passed (that is, _injected_) object is called a service. The code that passes the service to the client can be many kinds of things and is called the injector. Instead of the client specifying which service it will use, the injector tells the client what service to use. The "injection" refers to the passing of a dependency (a service) into the object (a client) that would use it.
-
+<div className="content-banner">
+<p>
+<b>Dependency Injection is a technique in which an object receives other objects that it depends on. These other objects are called dependencies.</b>
+</p>
+&nbsp;
+<p>
+In the typical <i>using</i> relationship the receiving object is called a <b>client</b> and the passed (that is, <i>injected</i>) object is called a <b>service</b>.<br/><br/>
+The code that passes the service to the client can be many kinds of things and is called the injector. Instead of the client specifying which service it will use, the injector tells the client what service to use. The 'injection' refers to the passing of a dependency (a service) into the object (a client) that would use it.<br/><br/>
 The service is made part of the client's state. Passing the service to the client, rather than allowing a client to build or find the service, is the fundamental requirement of the pattern.
-
-The intent behind dependency injection is to achieve separation of concerns of construction and use of objects. This can increase readability and code reuse.
-
-_Source: [Wikipedia](https://en.wikipedia.org/wiki/Dependency_injection)_
+<br/><br/>
+<i>Source: <a href="https://en.wikipedia.org/wiki/Dependency_injection"> Wikipedia </a></i>
+</p>
+<img className="content-banner-img" src="/static/img/unibot.svg" alt=" " />
+</div>
 
 ## Theory
 
@@ -24,7 +30,7 @@ When writing an individual class to achieve some functionality, it will likely n
 ```cs
 public class Foo
 {
-    ISomeService _service;
+    private readonly ISomeService _service;
 
     public Foo()
     {
@@ -46,7 +52,7 @@ After thinking about this, often you come to the realization that ultimately, Fo
 ```csharp
 public class Foo
 {
-    ISomeService _service;
+    private readonly ISomeService _service;
 
     public Foo(ISomeService service)
     {
@@ -80,7 +86,7 @@ And class Bar probably also doesn’t really care about what specific implementa
 ```cs
 public class Bar
 {
-    ISomeService _service;
+    private readonly ISomeService _service;
 
     public Bar(ISomeService service)
     {
@@ -124,5 +130,3 @@ Other benefits include:
 - **Encourages modular code** - When using a DI framework you will naturally follow better design practices, because it forces you to think about the interfaces between classes.
 - **Testability** - Writing automated unit tests or user-driven tests becomes very easy, because it is just a matter of writing a different ‘composition root’ which wires up the dependencies in a different way. Want to only test one subsystem? Simply create a new composition root. UniDi also has some support for avoiding code duplication in the composition root itself (using Installers - described below).
 Also see here and here for further discussion and justification for using a DI framework.
-
-_Originally written by Steve Vermeulen in 2016, edited for UniDi_

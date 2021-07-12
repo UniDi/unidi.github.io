@@ -1,0 +1,3 @@
+## Signals With Subcontainers
+
+Signals are only visible at the container level where they are declared and below.  For example, you might use Unity's multi-scene support and split up your game into a GUI scene and an Environment scene.  In the GUI scene you might fire a signal indicating that the GUI popup overlay has been opened/closed, so that the Environment scene can pause/resume activity.  One way of achieving this would be to declare a signal in a ProjectContext installer (or a shared <a href="../README.md#scene-parenting">scene parent</a>), then subscribe to it in the Environment scene, and then fire it from the GUI scene.
