@@ -13,7 +13,7 @@ If you are looking for the source code of the [React Native Archive website](htt
 - [Contributing](#-contributing)
 - [License](#-license)
 
-## ?? Getting started
+## Getting started
 
 ### Prerequisites
 
@@ -34,9 +34,9 @@ If you are looking for the source code of the [React Native Archive website](htt
 1.  `yarn start` to start the development server _(powered by [Docusaurus](https://v2.docusaurus.io))_.
 1.  `open http://localhost:3000/` to open the site in your favorite browser.
 
-## ?? Overview
+## Overview
 
-If you would like to **_contribute an edit or addition to the docs,_** read through our TODO:[style guide](STYLEGUIDE.md) before you write anything. All our content is generated from markdown files you can find in the `docs` directory.
+All the content is generated from markdown files you can find in the `docs` directory.
 
 **_To edit the internals of how the site is built,_** you may want to get familiarized with how the site is built. The UniDi website is a static site generated using [Docusaurus](https://v2.docusaurus.io). The website configuration can be found in the `website` directory. Visit the Docusaurus website to learn more about all the available configuration options.
 
@@ -60,7 +60,7 @@ unidi.github.io
 
 As mentioned above, the `docs` folder contains the source files for all of the docs in the React Native website. In most cases, you will want to edit the files within this directory. If you're adding a new doc or you need to alter the order the docs appear in the sidebar, take a look at the `sidebars.json` file in the `website` directory. The sidebars file contains a list of document ids that should match those defined in the header metadata (aka frontmatter) of the docs markdown files.
 
-## ?? Website configuration
+## Website configuration
 
 The main config file for the website can be found at `website/docusaurus.config.js`. This file tells [Docusaurus how to build the website](https://v2.docusaurus.io/docs/configuration). Edits to this file are rarely necessary.
 
@@ -72,7 +72,7 @@ The `src/theme` subdirectory contains the swizzled React components from the Doc
 
 The `showcase.json` file contains the list of users that are highlighted in the React Native showcase.
 
-## ?? Contributing
+## Contributing
 
 ### Create a branch
 
@@ -109,7 +109,7 @@ If possible, test any visual changes in all latest versions of the following bro
 1.  Follow GitHub's instructions.
 1.  Describe briefly your changes (in case of visual changes, please include screenshots).
 
-## ?? License
+## License
 
 UniDi is [Apache 2.0 licensed](./LICENSE.md).
 
