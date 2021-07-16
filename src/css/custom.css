@@ -7,16 +7,74 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
-  /* --ifm-code-font-size: 95%; */
-  --ifm-code-font-size: 85%;
-  --ifm-font-size-base: 17px;
+	--ifm-color-primary: #999719;
+	--ifm-color-primary-dark: #8a8817;
+	--ifm-color-primary-darker: #828015;
+	--ifm-color-primary-darkest: #6b6a11;
+	--ifm-color-primary-light: #a8a61b;
+	--ifm-color-primary-lighter: #b0ae1d;
+	--ifm-color-primary-lightest: #c7c421;
+
+
+	--ifm-color-secondary: #282828;
+	--ifm-color-secondary: #ebdbb2;
+	--ifm-color-secondary-dark: #898817;
+	--ifm-color-secondary-darker: #818016;
+	--ifm-color-secondary-darkest: #6a6a12;
+	--ifm-color-secondary-light: #a7a61d;
+	--ifm-color-secondary-lighter: #afae1e;
+	--ifm-color-secondary-lightest: #c6c422;
+
+	--ifm-color-success: #b9bb25;
+	--ifm-color-success-dark: #a6a821;
+	--ifm-color-success-darker: #9d9f1f;
+	--ifm-color-success-darkest: #81831a;
+	--ifm-color-success-light: #cbce29;
+	--ifm-color-success-lighter: #d3d52c;
+	--ifm-color-success-lightest: #d9db48;
+
+	--ifm-color-info: #468488;
+	--ifm-color-info-dark: #3f777a;
+	--ifm-color-info-darker: #3c7074;
+	--ifm-color-info-darkest: #315c5f;
+	--ifm-color-info-light: #4d9196;
+	--ifm-color-info-lighter: #51989c;
+	--ifm-color-info-lightest: #5fa8ad;
+
+	--ifm-color-warning: #d79920;
+	--ifm-color-warning-dark: #c28a1d;
+	--ifm-color-warning-darker: #b7821b;
+	--ifm-color-warning-darkest: #976b16;
+	--ifm-color-warning-light: #e0a430;
+	--ifm-color-warning-lighter: #e2a93a;
+	--ifm-color-warning-lightest: #e7b75b;
+
+	--ifm-color-danger: #cc241d;
+	--ifm-color-danger-dark: #b8201a;
+	--ifm-color-danger-darker: #ad1f19;
+	--ifm-color-danger-darkest: #8f1914;
+	--ifm-color-danger-light: #df2821;
+	--ifm-color-danger-lighter: #e1322b;
+	--ifm-color-danger-lightest: #e5504a;
+
+		/* --ifm-code-background: #ff0000; */
+
+		--ifm-background-color: #fbf1c6;
+
+		--ifm-code-font-size: 95%;
+		--ifm-font-size-base: 18px;
+}
+
+html[data-theme='dark'] {
+	--ifm-color-primary: #98971a;
+	--ifm-color-primary-dark: #898817;
+	--ifm-color-primary-darker: #818016;
+	--ifm-color-primary-darkest: #6a6a12;
+	--ifm-color-primary-light: #a7a61d;
+	--ifm-color-primary-lighter: #afae1e;
+	--ifm-color-primary-lightest: #c6c422;
+
+	--ifm-background-color: #1e2021;
 }
 
 .docusaurus-highlight-code-line {
@@ -24,6 +82,35 @@
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+/* Navbar */
+
+.navbar__logo {
+	width: 38px;
+	height: 34px;
+	transition: transform 0.5s;
+}
+
+.navbar__brand:hover .navbar__logo {
+	transform: rotate(27deg) scale(0.9);
+}
+.navbar-github-link:hover {
+	opacity: 0.6;
+}
+
+.navbar-github-link:before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: flex;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
+    no-repeat;
+}
+
+html[data-theme='dark'] .navbar-github-link:before {
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
+    no-repeat;
 }
 
 /* Content banner */
@@ -61,3 +148,4 @@
   color: #134484 !important;
   border-bottom-color: #134484 !important;
 }
+
