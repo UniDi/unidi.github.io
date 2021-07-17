@@ -7,6 +7,9 @@
 
 /* You can override the default Infima variables here. */
 :root {
+ --ifm-color-white: #f8f5d7;
+  --ifm-color-black: #282828;
+
 	--ifm-color-primary: #999719;
 	--ifm-color-primary-dark: #8a8817;
 	--ifm-color-primary-darker: #828015;
@@ -57,12 +60,18 @@
 	--ifm-color-danger-lighter: #e1322b;
 	--ifm-color-danger-lightest: #e5504a;
 
-		/* --ifm-code-background: #ff0000; */
+		--ifm-code-background: #f3e5bb;
 
 		--ifm-background-color: #fbf1c6;
 
 		--ifm-code-font-size: 95%;
 		--ifm-font-size-base: 18px;
+
+		--ifm-font-color-base: #282828;
+		/* --ifm-font-color-base-inverse: */
+		/* --ifm-font-color-secondary: */ 
+		/* --ifm-font-family-base */
+		/* --ifm-font-family-monospace */
 }
 
 html[data-theme='dark'] {
@@ -75,6 +84,8 @@ html[data-theme='dark'] {
 	--ifm-color-primary-lightest: #c6c422;
 
 	--ifm-background-color: #1e2021;
+
+	--ifm-font-color-base: #eadcb2;
 }
 
 .docusaurus-highlight-code-line {
