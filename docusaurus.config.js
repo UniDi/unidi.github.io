@@ -41,6 +41,21 @@ module.exports = {
                 'csharp',
             ],
         },
+        colorMode: {
+            defaultMode: 'dark',
+            disableSwitch: false,
+            respectPrefersColorScheme: true,
+            switchConfig: {
+                darkIcon: '☀️',
+                darkIconStyle: {
+                    marginLeft: '2px',
+                },
+                lightIcon: '🌙',
+                lightIconStyle: {
+                    marginLeft: '1px',
+                },
+            },
+        },
         navbar: {
             title: 'UniDi',
             logo: {
@@ -106,7 +121,7 @@ module.exports = {
                     ],
                 },
             ],
-            copyright: `${new Date().getFullYear()} Open Source.`,
+            copyright: `UniDi is Open Source - ${new Date().getFullYear()} Apache 2.0 License`,
         },
         googleAnalytics: {
             trackingID: 'G-8TFPD4PTWJ',
