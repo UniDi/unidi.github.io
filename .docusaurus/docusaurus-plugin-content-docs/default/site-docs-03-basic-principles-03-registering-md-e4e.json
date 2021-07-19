@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Basic Principles/Registering",
+  "id": "Basic Principles/Registering",
+  "isDocsHomePage": false,
+  "title": "Registering objects",
+  "description": "The core of a dependency injection framework is the DI container. In it's simplest form it's an object which contains a dictionary that holds all the registrations.",
+  "source": "@site/docs/03-Basic Principles/03-Registering.md",
+  "sourceDirName": "03-Basic Principles",
+  "slug": "/Basic Principles/Registering",
+  "permalink": "/docs/Basic Principles/Registering",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/03-Basic Principles/03-Registering.md",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Injection",
+    "permalink": "/docs/Basic Principles/Injection"
+  },
+  "next": {
+    "title": "Installers",
+    "permalink": "/docs/Basic Principles/Installers"
+  }
+}

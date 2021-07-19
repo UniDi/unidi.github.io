@@ -1,0 +1,22 @@
+{
+  "unversionedId": "di/Introduction",
+  "id": "di/Introduction",
+  "isDocsHomePage": false,
+  "title": "Introduction",
+  "description": "An Introcuction to dependency injection",
+  "source": "@site/docs/di/Introduction.md",
+  "sourceDirName": "di",
+  "slug": "/di/Introduction",
+  "permalink": "/docs/di/Introduction",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/di/Introduction.md",
+  "version": "current",
+  "frontMatter": {
+    "title": "Introduction",
+    "description": "An Introcuction to dependency injection"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "UniDi API - an introduction to",
+    "permalink": "/docs/di/HelloWorld"
+  }
+}

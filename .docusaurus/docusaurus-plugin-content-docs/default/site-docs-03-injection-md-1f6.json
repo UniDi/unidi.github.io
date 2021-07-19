@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Injection",
+  "id": "Injection",
+  "isDocsHomePage": false,
+  "title": "Injection",
+  "description": "There are many different ways of declaring dependencies on the container, which are documented in the next section.  There are also several ways of having these dependencies injected into your classes. These are:",
+  "source": "@site/docs/03-Injection.md",
+  "sourceDirName": ".",
+  "slug": "/Injection",
+  "permalink": "/docs/Injection",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/03-Injection.md",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Congratulations!",
+    "permalink": "/docs/tutorial-basics/congratulations"
+  },
+  "next": {
+    "title": "Manage Docs Versions",
+    "permalink": "/docs/tutorial-extras/manage-docs-versions"
+  }
+}

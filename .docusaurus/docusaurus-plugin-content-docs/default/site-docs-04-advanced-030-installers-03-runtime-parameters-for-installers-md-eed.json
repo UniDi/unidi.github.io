@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Advanced/Installers/Runtime-Parameters-For-Installers",
+  "id": "Advanced/Installers/Runtime-Parameters-For-Installers",
+  "isDocsHomePage": false,
+  "title": "Runtime-Parameters-For-Installers",
+  "description": "Runtime Parameters For Installers",
+  "source": "@site/docs/04-Advanced/030-Installers/03-Runtime-Parameters-For-Installers.md",
+  "sourceDirName": "04-Advanced/030-Installers",
+  "slug": "/Advanced/Installers/Runtime-Parameters-For-Installers",
+  "permalink": "/docs/Advanced/Installers/Runtime-Parameters-For-Installers",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/04-Advanced/030-Installers/03-Runtime-Parameters-For-Installers.md",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Composite-Installer",
+    "permalink": "/docs/Advanced/Installers/Composite-Installer"
+  },
+  "next": {
+    "title": "UniDi-For-Non-Unity-projects",
+    "permalink": "/docs/Advanced/UniDi-For-Non-Unity-projects"
+  }
+}

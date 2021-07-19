@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Advanced/Memory-Pools",
+  "id": "Advanced/Memory-Pools",
+  "isDocsHomePage": false,
+  "title": "Memory-Pools",
+  "description": "Example",
+  "source": "@site/docs/04-Advanced/070-Memory-Pools.md",
+  "sourceDirName": "04-Advanced",
+  "slug": "/Advanced/Memory-Pools",
+  "permalink": "/docs/Advanced/Memory-Pools",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/04-Advanced/070-Memory-Pools.md",
+  "version": "current",
+  "sidebarPosition": 70,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "UniDi-Factories",
+    "permalink": "/docs/Advanced/UniDi-Factories"
+  },
+  "next": {
+    "title": "Decorator-Bindings",
+    "permalink": "/docs/Advanced/Decorator-Bindings"
+  }
+}

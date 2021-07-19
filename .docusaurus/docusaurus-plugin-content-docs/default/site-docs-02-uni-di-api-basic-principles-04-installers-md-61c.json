@@ -1,0 +1,24 @@
+{
+  "unversionedId": "UniDi API - Basic Principles/Installers",
+  "id": "UniDi API - Basic Principles/Installers",
+  "isDocsHomePage": false,
+  "title": "Installers",
+  "description": "Often, there is some collections of related bindings for each sub-system and so it makes sense to group those bindings into a re-usable object.  In UniDi this re-usable object is called an 'installer'.  You can define a new installer as follows:",
+  "source": "@site/docs/02-UniDi API - Basic Principles/04-Installers.md",
+  "sourceDirName": "02-UniDi API - Basic Principles",
+  "slug": "/UniDi API - Basic Principles/Installers",
+  "permalink": "/docs/UniDi API - Basic Principles/Installers",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/02-UniDi API - Basic Principles/04-Installers.md",
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Registering objects",
+    "permalink": "/docs/UniDi API - Basic Principles/Registering"
+  },
+  "next": {
+    "title": "Using Non-MonoBehaviour Classes",
+    "permalink": "/docs/UniDi API - Basic Principles/Using-Non-MonoBehaviours"
+  }
+}

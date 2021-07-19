@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Extensions/Auto-Mocking/Using-Moq",
+  "id": "Extensions/Auto-Mocking/Using-Moq",
+  "isDocsHomePage": false,
+  "title": "Using-Moq",
+  "description": "Using Moq",
+  "source": "@site/docs/05-Extensions/010-Auto-Mocking/020-Using-Moq.md",
+  "sourceDirName": "05-Extensions/010-Auto-Mocking",
+  "slug": "/Extensions/Auto-Mocking/Using-Moq",
+  "permalink": "/docs/Extensions/Auto-Mocking/Using-Moq",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/05-Extensions/010-Auto-Mocking/020-Using-Moq.md",
+  "version": "current",
+  "sidebarPosition": 20,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Mocking-Introduction",
+    "permalink": "/docs/Extensions/Auto-Mocking/Mocking-Introduction"
+  },
+  "next": {
+    "title": "Using-NSubstitute",
+    "permalink": "/docs/Extensions/Auto-Mocking/Using-NSubstitute"
+  }
+}

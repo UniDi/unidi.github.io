@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Extensions/Signals/Introduction",
+  "id": "Extensions/Signals/Introduction",
+  "isDocsHomePage": false,
+  "title": "Introduction",
+  "description": "Motivation / Theory",
+  "source": "@site/docs/05-Extensions/020-Signals/010-Introduction.md",
+  "sourceDirName": "05-Extensions/020-Signals",
+  "slug": "/Extensions/Signals/Introduction",
+  "permalink": "/docs/Extensions/Signals/Introduction",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/05-Extensions/020-Signals/010-Introduction.md",
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Using-NSubstitute",
+    "permalink": "/docs/Extensions/Auto-Mocking/Using-NSubstitute"
+  },
+  "next": {
+    "title": "Signal-Declaration",
+    "permalink": "/docs/Extensions/Signals/Signal-Declaration"
+  }
+}

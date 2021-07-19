@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Basic Principles/Binding",
+  "id": "Basic Principles/Binding",
+  "isDocsHomePage": false,
+  "title": "Binding",
+  "description": "This article explains how to use the Bind<>() method for registering dependencies into the Di-container.",
+  "source": "@site/docs/03-Basic Principles/03-Binding.md",
+  "sourceDirName": "03-Basic Principles",
+  "slug": "/Basic Principles/Binding",
+  "permalink": "/docs/Basic Principles/Binding",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/03-Basic Principles/03-Binding.md",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "Binding",
+    "description": "This article explains how to use the Bind<>() method for registering dependencies into the Di-container."
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Injection",
+    "permalink": "/docs/Basic Principles/Injection"
+  },
+  "next": {
+    "title": "Construction Methods",
+    "permalink": "/docs/Basic Principles/Construction Methods"
+  }
+}

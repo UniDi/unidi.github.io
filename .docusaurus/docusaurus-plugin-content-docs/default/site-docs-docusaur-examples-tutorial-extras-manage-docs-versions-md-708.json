@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Docusaur-Examples/tutorial-extras/manage-docs-versions",
+  "id": "Docusaur-Examples/tutorial-extras/manage-docs-versions",
+  "isDocsHomePage": false,
+  "title": "Manage Docs Versions",
+  "description": "Docusaurus can manage multiple versions of your docs.",
+  "source": "@site/docs/Docusaur-Examples/tutorial-extras/manage-docs-versions.md",
+  "sourceDirName": "Docusaur-Examples/tutorial-extras",
+  "slug": "/Docusaur-Examples/tutorial-extras/manage-docs-versions",
+  "permalink": "/docs/Docusaur-Examples/tutorial-extras/manage-docs-versions",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Docusaur-Examples/tutorial-extras/manage-docs-versions.md",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Congratulations!",
+    "permalink": "/docs/Docusaur-Examples/tutorial-basics/congratulations"
+  },
+  "next": {
+    "title": "Translate your site",
+    "permalink": "/docs/Docusaur-Examples/tutorial-extras/translate-your-site"
+  }
+}

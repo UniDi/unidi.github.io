@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Advanced/UniDi-Settings",
+  "id": "Advanced/UniDi-Settings",
+  "isDocsHomePage": false,
+  "title": "UniDi-Settings",
+  "description": "UniDi Settings",
+  "source": "@site/docs/04-Advanced/50-UniDi-Settings.md",
+  "sourceDirName": "04-Advanced",
+  "slug": "/Advanced/UniDi-Settings",
+  "permalink": "/docs/Advanced/UniDi-Settings",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/04-Advanced/50-UniDi-Settings.md",
+  "version": "current",
+  "sidebarPosition": 50,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "UniDi-For-Non-Unity-projects",
+    "permalink": "/docs/Advanced/UniDi-For-Non-Unity-projects"
+  },
+  "next": {
+    "title": "UniDi-Factories",
+    "permalink": "/docs/Advanced/UniDi-Factories"
+  }
+}

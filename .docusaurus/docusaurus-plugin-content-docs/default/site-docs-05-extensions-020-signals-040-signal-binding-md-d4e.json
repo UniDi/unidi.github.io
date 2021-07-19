@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Extensions/Signals/Signal-Binding",
+  "id": "Extensions/Signals/Signal-Binding",
+  "isDocsHomePage": false,
+  "title": "Signal-Binding",
+  "description": "Binding Signals with BindSignal",
+  "source": "@site/docs/05-Extensions/020-Signals/040-Signal-Binding.md",
+  "sourceDirName": "05-Extensions/020-Signals",
+  "slug": "/Extensions/Signals/Signal-Binding",
+  "permalink": "/docs/Extensions/Signals/Signal-Binding",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/05-Extensions/020-Signals/040-Signal-Binding.md",
+  "version": "current",
+  "sidebarPosition": 40,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Signal-Firing",
+    "permalink": "/docs/Extensions/Signals/Signal-Firing"
+  },
+  "next": {
+    "title": "Abstract-Signals",
+    "permalink": "/docs/Extensions/Signals/Abstract-Signals"
+  }
+}

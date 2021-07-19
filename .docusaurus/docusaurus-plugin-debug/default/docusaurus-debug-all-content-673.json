@@ -1,0 +1,1547 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "loadedVersions": [
+        {
+          "versionName": "current",
+          "versionLabel": "Next",
+          "versionPath": "/docs",
+          "versionEditUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs",
+          "versionEditUrlLocalized": "https://github.com/UniDi/unidi.github.io/edit/master/website/i18n/en/docusaurus-plugin-content-docs/current",
+          "isLast": true,
+          "routePriority": -1,
+          "sidebarFilePath": "/Users/MateoPanadero/Repositories/UniDi/Scratch/docusaurus/unidi/sidebars.js",
+          "contentPath": "/Users/MateoPanadero/Repositories/UniDi/Scratch/docusaurus/unidi/docs",
+          "contentPathLocalized": "/Users/MateoPanadero/Repositories/UniDi/Scratch/docusaurus/unidi/i18n/en/docusaurus-plugin-content-docs/current",
+          "mainDocId": "intro",
+          "sidebars": {
+            "tutorialSidebar": [
+              {
+                "type": "doc",
+                "id": "intro"
+              },
+              {
+                "type": "category",
+                "label": "Get Started",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Get Started/Introduction"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Get Started/Hello-World"
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "type": "category",
+                "label": "Basic Principles",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Basic Principles/Injection"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Basic Principles/Binding"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Basic Principles/Construction Methods"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Basic Principles/Installers"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Basic Principles/Using-Non-MonoBehaviour-Classes"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Basic Principles/Object-Graph-Validation"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Basic Principles/Bind-MonoBehaviours-In-Scene"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Basic Principles/General-Guidelines-Tips-And-Tricks"
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "type": "category",
+                "label": "Advanced",
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "Advanced/Bindings"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Advanced/Injections"
+                  },
+                  {
+                    "type": "category",
+                    "label": "Installers",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "Advanced/Installers/ScriptableObject-Installers",
+                        "label": "ScriptableObject Installer"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Advanced/Installers/Composite-Installer"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Advanced/Installers/Runtime-Parameters-For-Installers"
+                      }
+                    ],
+                    "collapsed": true
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Advanced/UniDi-For-Non-Unity-projects"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Advanced/UniDi-Settings"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Advanced/UniDi-Factories"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Advanced/Memory-Pools"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Advanced/Decorator-Bindings"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Advanced/UniDi-Test-Framework"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "Advanced/Sub-Containers"
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "type": "category",
+                "label": "Extensions",
+                "items": [
+                  {
+                    "type": "category",
+                    "label": "Auto-Mocking",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "Extensions/Auto-Mocking/Mocking-Introduction"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Extensions/Auto-Mocking/Using-Moq"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Extensions/Auto-Mocking/Using-NSubstitute"
+                      }
+                    ],
+                    "collapsed": true
+                  },
+                  {
+                    "type": "category",
+                    "label": "Signals",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "Extensions/Signals/Introduction"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Extensions/Signals/Signal-Declaration"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Extensions/Signals/Signal-Firing"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Extensions/Signals/Signal-Binding"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Extensions/Signals/Abstract-Signals"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Extensions/Signals/Signals-With-Subcontainers"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Extensions/Signals/Asynchronous-Signals"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Extensions/Signals/Signals-Settings"
+                      }
+                    ],
+                    "collapsed": true
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "type": "doc",
+                "id": "CheatSheet"
+              },
+              {
+                "type": "category",
+                "label": "Docusaur-Docs",
+                "items": [
+                  {
+                    "type": "category",
+                    "label": "Tutorial - Basics",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "Docusaur-Docs/tutorial-basics/create-a-page"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Docusaur-Docs/tutorial-basics/create-a-document"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Docusaur-Docs/tutorial-basics/create-a-blog-post"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Docusaur-Docs/tutorial-basics/markdown-features"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Docusaur-Docs/tutorial-basics/deploy-your-site"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Docusaur-Docs/tutorial-basics/congratulations"
+                      }
+                    ],
+                    "collapsed": true
+                  },
+                  {
+                    "type": "category",
+                    "label": "Tutorial - Extras",
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "Docusaur-Docs/tutorial-extras/manage-docs-versions"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "Docusaur-Docs/tutorial-extras/translate-your-site"
+                      }
+                    ],
+                    "collapsed": true
+                  }
+                ],
+                "collapsed": true
+              }
+            ]
+          },
+          "permalinkToSidebar": {
+            "/docs/Advanced/Bindings": "tutorialSidebar",
+            "/docs/Advanced/Decorator-Bindings": "tutorialSidebar",
+            "/docs/Advanced/Injections": "tutorialSidebar",
+            "/docs/Advanced/Installers/Composite-Installer": "tutorialSidebar",
+            "/docs/Advanced/Installers/Runtime-Parameters-For-Installers": "tutorialSidebar",
+            "/docs/Advanced/Installers/ScriptableObject-Installers": "tutorialSidebar",
+            "/docs/Advanced/Memory-Pools": "tutorialSidebar",
+            "/docs/Advanced/Sub-Containers": "tutorialSidebar",
+            "/docs/Advanced/UniDi-Factories": "tutorialSidebar",
+            "/docs/Advanced/UniDi-For-Non-Unity-projects": "tutorialSidebar",
+            "/docs/Advanced/UniDi-Settings": "tutorialSidebar",
+            "/docs/Advanced/UniDi-Test-Framework": "tutorialSidebar",
+            "/docs/Basic Principles/Bind-MonoBehaviours-In-Scene": "tutorialSidebar",
+            "/docs/Basic Principles/Binding": "tutorialSidebar",
+            "/docs/Basic Principles/Construction Methods": "tutorialSidebar",
+            "/docs/Basic Principles/General-Guidelines-Tips-And-Tricks": "tutorialSidebar",
+            "/docs/Basic Principles/Injection": "tutorialSidebar",
+            "/docs/Basic Principles/Installers": "tutorialSidebar",
+            "/docs/Basic Principles/Object-Graph-Validation": "tutorialSidebar",
+            "/docs/Basic Principles/Using-Non-MonoBehaviour-Classes": "tutorialSidebar",
+            "/docs/CheatSheet": "tutorialSidebar",
+            "/docs/Docusaur-Docs/tutorial-basics/congratulations": "tutorialSidebar",
+            "/docs/Docusaur-Docs/tutorial-basics/create-a-blog-post": "tutorialSidebar",
+            "/docs/Docusaur-Docs/tutorial-basics/create-a-document": "tutorialSidebar",
+            "/docs/Docusaur-Docs/tutorial-basics/create-a-page": "tutorialSidebar",
+            "/docs/Docusaur-Docs/tutorial-basics/deploy-your-site": "tutorialSidebar",
+            "/docs/Docusaur-Docs/tutorial-basics/markdown-features": "tutorialSidebar",
+            "/docs/Docusaur-Docs/tutorial-extras/manage-docs-versions": "tutorialSidebar",
+            "/docs/Docusaur-Docs/tutorial-extras/translate-your-site": "tutorialSidebar",
+            "/docs/Extensions/Auto-Mocking/Mocking-Introduction": "tutorialSidebar",
+            "/docs/Extensions/Auto-Mocking/Using-Moq": "tutorialSidebar",
+            "/docs/Extensions/Auto-Mocking/Using-NSubstitute": "tutorialSidebar",
+            "/docs/Extensions/Signals/Abstract-Signals": "tutorialSidebar",
+            "/docs/Extensions/Signals/Asynchronous-Signals": "tutorialSidebar",
+            "/docs/Extensions/Signals/Introduction": "tutorialSidebar",
+            "/docs/Extensions/Signals/Signal-Binding": "tutorialSidebar",
+            "/docs/Extensions/Signals/Signal-Declaration": "tutorialSidebar",
+            "/docs/Extensions/Signals/Signal-Firing": "tutorialSidebar",
+            "/docs/Extensions/Signals/Signals-Settings": "tutorialSidebar",
+            "/docs/Extensions/Signals/Signals-With-Subcontainers": "tutorialSidebar",
+            "/docs/Get Started/Hello-World": "tutorialSidebar",
+            "/docs/Get Started/Introduction": "tutorialSidebar",
+            "/docs/intro": "tutorialSidebar"
+          },
+          "docs": [
+            {
+              "unversionedId": "Advanced/Bindings",
+              "id": "Advanced/Bindings",
+              "isDocsHomePage": false,
+              "title": "Binding",
+              "description": "Basic Principles/Binding",
+              "source": "@site/docs/04-Advanced/010-Bindings.md",
+              "sourceDirName": "04-Advanced",
+              "slug": "/Advanced/Bindings",
+              "permalink": "/docs/Advanced/Bindings",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/04-Advanced/010-Bindings.md",
+              "version": "current",
+              "sidebarPosition": 10,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "General Guidelines",
+                "permalink": "/docs/Basic Principles/General-Guidelines-Tips-And-Tricks"
+              },
+              "next": {
+                "title": "Injection",
+                "permalink": "/docs/Advanced/Injections"
+              }
+            },
+            {
+              "unversionedId": "Advanced/Decorator-Bindings",
+              "id": "Advanced/Decorator-Bindings",
+              "isDocsHomePage": false,
+              "title": "Decorator-Bindings",
+              "description": "Introduction",
+              "source": "@site/docs/04-Advanced/080-Decorator-Bindings.md",
+              "sourceDirName": "04-Advanced",
+              "slug": "/Advanced/Decorator-Bindings",
+              "permalink": "/docs/Advanced/Decorator-Bindings",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/04-Advanced/080-Decorator-Bindings.md",
+              "version": "current",
+              "sidebarPosition": 80,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Memory-Pools",
+                "permalink": "/docs/Advanced/Memory-Pools"
+              },
+              "next": {
+                "title": "Writing Automated Tests",
+                "permalink": "/docs/Advanced/UniDi-Test-Framework"
+              }
+            },
+            {
+              "unversionedId": "Advanced/Injections",
+              "id": "Advanced/Injections",
+              "isDocsHomePage": false,
+              "title": "Injection",
+              "description": "HR",
+              "source": "@site/docs/04-Advanced/020-Injections.md",
+              "sourceDirName": "04-Advanced",
+              "slug": "/Advanced/Injections",
+              "permalink": "/docs/Advanced/Injections",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/04-Advanced/020-Injections.md",
+              "version": "current",
+              "sidebarPosition": 20,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Binding",
+                "permalink": "/docs/Advanced/Bindings"
+              },
+              "next": {
+                "title": "ScriptableObject Installer",
+                "permalink": "/docs/Advanced/Installers/ScriptableObject-Installers"
+              }
+            },
+            {
+              "unversionedId": "Advanced/Installers/Composite-Installer",
+              "id": "Advanced/Installers/Composite-Installer",
+              "isDocsHomePage": false,
+              "title": "Composite-Installer",
+              "description": "Introduction",
+              "source": "@site/docs/04-Advanced/030-Installers/02-Composite-Installer.md",
+              "sourceDirName": "04-Advanced/030-Installers",
+              "slug": "/Advanced/Installers/Composite-Installer",
+              "permalink": "/docs/Advanced/Installers/Composite-Installer",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/04-Advanced/030-Installers/02-Composite-Installer.md",
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "ScriptableObject Installer",
+                "permalink": "/docs/Advanced/Installers/ScriptableObject-Installers"
+              },
+              "next": {
+                "title": "Runtime-Parameters-For-Installers",
+                "permalink": "/docs/Advanced/Installers/Runtime-Parameters-For-Installers"
+              }
+            },
+            {
+              "unversionedId": "Advanced/Installers/Runtime-Parameters-For-Installers",
+              "id": "Advanced/Installers/Runtime-Parameters-For-Installers",
+              "isDocsHomePage": false,
+              "title": "Runtime-Parameters-For-Installers",
+              "description": "Runtime Parameters For Installers",
+              "source": "@site/docs/04-Advanced/030-Installers/03-Runtime-Parameters-For-Installers.md",
+              "sourceDirName": "04-Advanced/030-Installers",
+              "slug": "/Advanced/Installers/Runtime-Parameters-For-Installers",
+              "permalink": "/docs/Advanced/Installers/Runtime-Parameters-For-Installers",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/04-Advanced/030-Installers/03-Runtime-Parameters-For-Installers.md",
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Composite-Installer",
+                "permalink": "/docs/Advanced/Installers/Composite-Installer"
+              },
+              "next": {
+                "title": "UniDi-For-Non-Unity-projects",
+                "permalink": "/docs/Advanced/UniDi-For-Non-Unity-projects"
+              }
+            },
+            {
+              "unversionedId": "Advanced/Installers/ScriptableObject-Installers",
+              "id": "Advanced/Installers/ScriptableObject-Installers",
+              "isDocsHomePage": false,
+              "title": "ScriptableObject Installer",
+              "description": "One of the most powerful scripting features in Unity are ScriptableObjects. They are data containers that let you save and store data in both Editor session and in runtime. Just like MonoBehaviours, ScriptableObjects derive from the base Unity object but, unlike MonoBehaviours, you can not attach a ScriptableObject to a GameObject. Instead, you need to save them as Assets in your Project.",
+              "source": "@site/docs/04-Advanced/030-Installers/01-ScriptableObject-Installers.md",
+              "sourceDirName": "04-Advanced/030-Installers",
+              "slug": "/Advanced/Installers/ScriptableObject-Installers",
+              "permalink": "/docs/Advanced/Installers/ScriptableObject-Installers",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/04-Advanced/030-Installers/01-ScriptableObject-Installers.md",
+              "version": "current",
+              "sidebar_label": "ScriptableObject Installer",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_label": "ScriptableObject Installer"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Injection",
+                "permalink": "/docs/Advanced/Injections"
+              },
+              "next": {
+                "title": "Composite-Installer",
+                "permalink": "/docs/Advanced/Installers/Composite-Installer"
+              }
+            },
+            {
+              "unversionedId": "Advanced/Memory-Pools",
+              "id": "Advanced/Memory-Pools",
+              "isDocsHomePage": false,
+              "title": "Memory-Pools",
+              "description": "Example",
+              "source": "@site/docs/04-Advanced/070-Memory-Pools.md",
+              "sourceDirName": "04-Advanced",
+              "slug": "/Advanced/Memory-Pools",
+              "permalink": "/docs/Advanced/Memory-Pools",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/04-Advanced/070-Memory-Pools.md",
+              "version": "current",
+              "sidebarPosition": 70,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "UniDi-Factories",
+                "permalink": "/docs/Advanced/UniDi-Factories"
+              },
+              "next": {
+                "title": "Decorator-Bindings",
+                "permalink": "/docs/Advanced/Decorator-Bindings"
+              }
+            },
+            {
+              "unversionedId": "Advanced/Sub-Containers",
+              "id": "Advanced/Sub-Containers",
+              "isDocsHomePage": false,
+              "title": "Sub-Containers",
+              "description": "Introduction",
+              "source": "@site/docs/04-Advanced/100-Sub-Containers.md",
+              "sourceDirName": "04-Advanced",
+              "slug": "/Advanced/Sub-Containers",
+              "permalink": "/docs/Advanced/Sub-Containers",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/04-Advanced/100-Sub-Containers.md",
+              "version": "current",
+              "sidebarPosition": 100,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Writing Automated Tests",
+                "permalink": "/docs/Advanced/UniDi-Test-Framework"
+              },
+              "next": {
+                "title": "Mocking-Introduction",
+                "permalink": "/docs/Extensions/Auto-Mocking/Mocking-Introduction"
+              }
+            },
+            {
+              "unversionedId": "Advanced/UniDi-Factories",
+              "id": "Advanced/UniDi-Factories",
+              "isDocsHomePage": false,
+              "title": "UniDi-Factories",
+              "description": "Dynamically Creating Objects with Factories",
+              "source": "@site/docs/04-Advanced/060-UniDi-Factories.md",
+              "sourceDirName": "04-Advanced",
+              "slug": "/Advanced/UniDi-Factories",
+              "permalink": "/docs/Advanced/UniDi-Factories",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/04-Advanced/060-UniDi-Factories.md",
+              "version": "current",
+              "sidebarPosition": 60,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "UniDi-Settings",
+                "permalink": "/docs/Advanced/UniDi-Settings"
+              },
+              "next": {
+                "title": "Memory-Pools",
+                "permalink": "/docs/Advanced/Memory-Pools"
+              }
+            },
+            {
+              "unversionedId": "Advanced/UniDi-For-Non-Unity-projects",
+              "id": "Advanced/UniDi-For-Non-Unity-projects",
+              "isDocsHomePage": false,
+              "title": "UniDi-For-Non-Unity-projects",
+              "description": "Using UniDi Outside Unity Or For DLLs",
+              "source": "@site/docs/04-Advanced/040-UniDi-For-Non-Unity-projects.md",
+              "sourceDirName": "04-Advanced",
+              "slug": "/Advanced/UniDi-For-Non-Unity-projects",
+              "permalink": "/docs/Advanced/UniDi-For-Non-Unity-projects",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/04-Advanced/040-UniDi-For-Non-Unity-projects.md",
+              "version": "current",
+              "sidebarPosition": 40,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Runtime-Parameters-For-Installers",
+                "permalink": "/docs/Advanced/Installers/Runtime-Parameters-For-Installers"
+              },
+              "next": {
+                "title": "UniDi-Settings",
+                "permalink": "/docs/Advanced/UniDi-Settings"
+              }
+            },
+            {
+              "unversionedId": "Advanced/UniDi-Settings",
+              "id": "Advanced/UniDi-Settings",
+              "isDocsHomePage": false,
+              "title": "UniDi-Settings",
+              "description": "UniDi Settings",
+              "source": "@site/docs/04-Advanced/050-UniDi-Settings.md",
+              "sourceDirName": "04-Advanced",
+              "slug": "/Advanced/UniDi-Settings",
+              "permalink": "/docs/Advanced/UniDi-Settings",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/04-Advanced/050-UniDi-Settings.md",
+              "version": "current",
+              "sidebarPosition": 50,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "UniDi-For-Non-Unity-projects",
+                "permalink": "/docs/Advanced/UniDi-For-Non-Unity-projects"
+              },
+              "next": {
+                "title": "UniDi-Factories",
+                "permalink": "/docs/Advanced/UniDi-Factories"
+              }
+            },
+            {
+              "unversionedId": "Advanced/UniDi-Test-Framework",
+              "id": "Advanced/UniDi-Test-Framework",
+              "isDocsHomePage": false,
+              "title": "Writing Automated Tests",
+              "description": "Writing Automated Unit Tests and Integration Tests",
+              "source": "@site/docs/04-Advanced/090-UniDi-Test-Framework.md",
+              "sourceDirName": "04-Advanced",
+              "slug": "/Advanced/UniDi-Test-Framework",
+              "permalink": "/docs/Advanced/UniDi-Test-Framework",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/04-Advanced/090-UniDi-Test-Framework.md",
+              "version": "current",
+              "sidebarPosition": 90,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Decorator-Bindings",
+                "permalink": "/docs/Advanced/Decorator-Bindings"
+              },
+              "next": {
+                "title": "Sub-Containers",
+                "permalink": "/docs/Advanced/Sub-Containers"
+              }
+            },
+            {
+              "unversionedId": "Basic Principles/Bind-MonoBehaviours-In-Scene",
+              "id": "Basic Principles/Bind-MonoBehaviours-In-Scene",
+              "isDocsHomePage": false,
+              "title": "Bind MonoBehaviours In The Scene",
+              "description": "In many cases, you have a number of MonoBehaviours that have been added to the scene within the Unity editor (ie. at editor time not runtime) and you want to also have these MonoBehaviours added to the UniDi Container so that they can be injected into other classes.",
+              "source": "@site/docs/03-Basic Principles/08-Bind-MonoBehaviours-In-Scene.md",
+              "sourceDirName": "03-Basic Principles",
+              "slug": "/Basic Principles/Bind-MonoBehaviours-In-Scene",
+              "permalink": "/docs/Basic Principles/Bind-MonoBehaviours-In-Scene",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/03-Basic Principles/08-Bind-MonoBehaviours-In-Scene.md",
+              "version": "current",
+              "sidebarPosition": 8,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Object Graph Validation",
+                "permalink": "/docs/Basic Principles/Object-Graph-Validation"
+              },
+              "next": {
+                "title": "General Guidelines",
+                "permalink": "/docs/Basic Principles/General-Guidelines-Tips-And-Tricks"
+              }
+            },
+            {
+              "unversionedId": "Basic Principles/Binding",
+              "id": "Basic Principles/Binding",
+              "isDocsHomePage": false,
+              "title": "Binding",
+              "description": "This article explains how to use the Bind<>() method for registering dependencies into the Di-container.",
+              "source": "@site/docs/03-Basic Principles/03-Binding.md",
+              "sourceDirName": "03-Basic Principles",
+              "slug": "/Basic Principles/Binding",
+              "permalink": "/docs/Basic Principles/Binding",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/03-Basic Principles/03-Binding.md",
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "id": "Binding",
+                "description": "This article explains how to use the Bind<>() method for registering dependencies into the Di-container."
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Injection",
+                "permalink": "/docs/Basic Principles/Injection"
+              },
+              "next": {
+                "title": "Construction Methods",
+                "permalink": "/docs/Basic Principles/Construction Methods"
+              }
+            },
+            {
+              "unversionedId": "Basic Principles/Construction Methods",
+              "id": "Basic Principles/Construction Methods",
+              "isDocsHomePage": false,
+              "title": "Construction Methods",
+              "description": "When you bind a dependency you can specify how the instance should be constructed and retrieved.",
+              "source": "@site/docs/03-Basic Principles/04-Construction-Methods.md",
+              "sourceDirName": "03-Basic Principles",
+              "slug": "/Basic Principles/Construction Methods",
+              "permalink": "/docs/Basic Principles/Construction Methods",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/03-Basic Principles/04-Construction-Methods.md",
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "id": "Construction Methods"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Binding",
+                "permalink": "/docs/Basic Principles/Binding"
+              },
+              "next": {
+                "title": "Installers",
+                "permalink": "/docs/Basic Principles/Installers"
+              }
+            },
+            {
+              "unversionedId": "Basic Principles/General-Guidelines-Tips-And-Tricks",
+              "id": "Basic Principles/General-Guidelines-Tips-And-Tricks",
+              "isDocsHomePage": false,
+              "title": "General Guidelines",
+              "description": "* Recommendations / Gotchas / Tips and Tricks *",
+              "source": "@site/docs/03-Basic Principles/09-General-Guidelines-Tips-And-Tricks.md",
+              "sourceDirName": "03-Basic Principles",
+              "slug": "/Basic Principles/General-Guidelines-Tips-And-Tricks",
+              "permalink": "/docs/Basic Principles/General-Guidelines-Tips-And-Tricks",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/03-Basic Principles/09-General-Guidelines-Tips-And-Tricks.md",
+              "version": "current",
+              "sidebarPosition": 9,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Bind MonoBehaviours In The Scene",
+                "permalink": "/docs/Basic Principles/Bind-MonoBehaviours-In-Scene"
+              },
+              "next": {
+                "title": "Binding",
+                "permalink": "/docs/Advanced/Bindings"
+              }
+            },
+            {
+              "unversionedId": "Basic Principles/Injection",
+              "id": "Basic Principles/Injection",
+              "isDocsHomePage": false,
+              "title": "Injection",
+              "description": "",
+              "source": "@site/docs/03-Basic Principles/02-Injection.md",
+              "sourceDirName": "03-Basic Principles",
+              "slug": "/Basic Principles/Injection",
+              "permalink": "/docs/Basic Principles/Injection",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/03-Basic Principles/02-Injection.md",
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "id": "Injection",
+                "description": ""
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Hello World! Example",
+                "permalink": "/docs/Get Started/Hello-World"
+              },
+              "next": {
+                "title": "Binding",
+                "permalink": "/docs/Basic Principles/Binding"
+              }
+            },
+            {
+              "unversionedId": "Basic Principles/Installers",
+              "id": "Basic Principles/Installers",
+              "isDocsHomePage": false,
+              "title": "Installers",
+              "description": "Often, there is some collections of related bindings for each sub-system and so it makes sense to group those bindings into a re-usable object.  In UniDi this re-usable object is called an 'installer'.  You can define a new installer as follows:",
+              "source": "@site/docs/03-Basic Principles/05-Installers.md",
+              "sourceDirName": "03-Basic Principles",
+              "slug": "/Basic Principles/Installers",
+              "permalink": "/docs/Basic Principles/Installers",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/03-Basic Principles/05-Installers.md",
+              "version": "current",
+              "sidebarPosition": 5,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Construction Methods",
+                "permalink": "/docs/Basic Principles/Construction Methods"
+              },
+              "next": {
+                "title": "Using Non-MonoBehaviour Classes",
+                "permalink": "/docs/Basic Principles/Using-Non-MonoBehaviour-Classes"
+              }
+            },
+            {
+              "unversionedId": "Basic Principles/Object-Graph-Validation",
+              "id": "Basic Principles/Object-Graph-Validation",
+              "isDocsHomePage": false,
+              "title": "Object Graph Validation",
+              "description": "HR",
+              "source": "@site/docs/03-Basic Principles/07-Object-Graph-Validation.md",
+              "sourceDirName": "03-Basic Principles",
+              "slug": "/Basic Principles/Object-Graph-Validation",
+              "permalink": "/docs/Basic Principles/Object-Graph-Validation",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/03-Basic Principles/07-Object-Graph-Validation.md",
+              "version": "current",
+              "sidebarPosition": 7,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Using Non-MonoBehaviour Classes",
+                "permalink": "/docs/Basic Principles/Using-Non-MonoBehaviour-Classes"
+              },
+              "next": {
+                "title": "Bind MonoBehaviours In The Scene",
+                "permalink": "/docs/Basic Principles/Bind-MonoBehaviours-In-Scene"
+              }
+            },
+            {
+              "unversionedId": "Basic Principles/Using-Non-MonoBehaviour-Classes",
+              "id": "Basic Principles/Using-Non-MonoBehaviour-Classes",
+              "isDocsHomePage": false,
+              "title": "Using Non-MonoBehaviour Classes",
+              "description": "ITickable",
+              "source": "@site/docs/03-Basic Principles/06-Using-Non-MonoBehaviour-Classes.md",
+              "sourceDirName": "03-Basic Principles",
+              "slug": "/Basic Principles/Using-Non-MonoBehaviour-Classes",
+              "permalink": "/docs/Basic Principles/Using-Non-MonoBehaviour-Classes",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/03-Basic Principles/06-Using-Non-MonoBehaviour-Classes.md",
+              "version": "current",
+              "sidebarPosition": 6,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Installers",
+                "permalink": "/docs/Basic Principles/Installers"
+              },
+              "next": {
+                "title": "Object Graph Validation",
+                "permalink": "/docs/Basic Principles/Object-Graph-Validation"
+              }
+            },
+            {
+              "unversionedId": "CheatSheet",
+              "id": "CheatSheet",
+              "isDocsHomePage": false,
+              "title": "CheatSheet",
+              "description": "Installers Cheat-Sheet",
+              "source": "@site/docs/200-CheatSheet.md",
+              "sourceDirName": ".",
+              "slug": "/CheatSheet",
+              "permalink": "/docs/CheatSheet",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/200-CheatSheet.md",
+              "version": "current",
+              "sidebarPosition": 200,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Signals-Settings",
+                "permalink": "/docs/Extensions/Signals/Signals-Settings"
+              },
+              "next": {
+                "title": "Create a Page",
+                "permalink": "/docs/Docusaur-Docs/tutorial-basics/create-a-page"
+              }
+            },
+            {
+              "unversionedId": "Docusaur-Docs/tutorial-basics/congratulations",
+              "id": "Docusaur-Docs/tutorial-basics/congratulations",
+              "isDocsHomePage": false,
+              "title": "Congratulations!",
+              "description": "You have just learned the basics of Docusaurus and made some changes to the initial template.",
+              "source": "@site/docs/Docusaur-Docs/tutorial-basics/congratulations.md",
+              "sourceDirName": "Docusaur-Docs/tutorial-basics",
+              "slug": "/Docusaur-Docs/tutorial-basics/congratulations",
+              "permalink": "/docs/Docusaur-Docs/tutorial-basics/congratulations",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/Docusaur-Docs/tutorial-basics/congratulations.md",
+              "version": "current",
+              "sidebarPosition": 6,
+              "frontMatter": {
+                "sidebar_position": 6
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Deploy your site",
+                "permalink": "/docs/Docusaur-Docs/tutorial-basics/deploy-your-site"
+              },
+              "next": {
+                "title": "Manage Docs Versions",
+                "permalink": "/docs/Docusaur-Docs/tutorial-extras/manage-docs-versions"
+              }
+            },
+            {
+              "unversionedId": "Docusaur-Docs/tutorial-basics/create-a-blog-post",
+              "id": "Docusaur-Docs/tutorial-basics/create-a-blog-post",
+              "isDocsHomePage": false,
+              "title": "Create a Blog Post",
+              "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+              "source": "@site/docs/Docusaur-Docs/tutorial-basics/create-a-blog-post.md",
+              "sourceDirName": "Docusaur-Docs/tutorial-basics",
+              "slug": "/Docusaur-Docs/tutorial-basics/create-a-blog-post",
+              "permalink": "/docs/Docusaur-Docs/tutorial-basics/create-a-blog-post",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/Docusaur-Docs/tutorial-basics/create-a-blog-post.md",
+              "version": "current",
+              "sidebarPosition": 3,
+              "frontMatter": {
+                "sidebar_position": 3
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Create a Document",
+                "permalink": "/docs/Docusaur-Docs/tutorial-basics/create-a-document"
+              },
+              "next": {
+                "title": "Markdown Features",
+                "permalink": "/docs/Docusaur-Docs/tutorial-basics/markdown-features"
+              }
+            },
+            {
+              "unversionedId": "Docusaur-Docs/tutorial-basics/create-a-document",
+              "id": "Docusaur-Docs/tutorial-basics/create-a-document",
+              "isDocsHomePage": false,
+              "title": "Create a Document",
+              "description": "Documents are groups of pages connected through:",
+              "source": "@site/docs/Docusaur-Docs/tutorial-basics/create-a-document.md",
+              "sourceDirName": "Docusaur-Docs/tutorial-basics",
+              "slug": "/Docusaur-Docs/tutorial-basics/create-a-document",
+              "permalink": "/docs/Docusaur-Docs/tutorial-basics/create-a-document",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/Docusaur-Docs/tutorial-basics/create-a-document.md",
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Create a Page",
+                "permalink": "/docs/Docusaur-Docs/tutorial-basics/create-a-page"
+              },
+              "next": {
+                "title": "Create a Blog Post",
+                "permalink": "/docs/Docusaur-Docs/tutorial-basics/create-a-blog-post"
+              }
+            },
+            {
+              "unversionedId": "Docusaur-Docs/tutorial-basics/create-a-page",
+              "id": "Docusaur-Docs/tutorial-basics/create-a-page",
+              "isDocsHomePage": false,
+              "title": "Create a Page",
+              "description": "Add Markdown or React files to src/pages to create a standalone page:",
+              "source": "@site/docs/Docusaur-Docs/tutorial-basics/create-a-page.md",
+              "sourceDirName": "Docusaur-Docs/tutorial-basics",
+              "slug": "/Docusaur-Docs/tutorial-basics/create-a-page",
+              "permalink": "/docs/Docusaur-Docs/tutorial-basics/create-a-page",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/Docusaur-Docs/tutorial-basics/create-a-page.md",
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "CheatSheet",
+                "permalink": "/docs/CheatSheet"
+              },
+              "next": {
+                "title": "Create a Document",
+                "permalink": "/docs/Docusaur-Docs/tutorial-basics/create-a-document"
+              }
+            },
+            {
+              "unversionedId": "Docusaur-Docs/tutorial-basics/deploy-your-site",
+              "id": "Docusaur-Docs/tutorial-basics/deploy-your-site",
+              "isDocsHomePage": false,
+              "title": "Deploy your site",
+              "description": "Docusaurus is a static-site-generator (also called Jamstack).",
+              "source": "@site/docs/Docusaur-Docs/tutorial-basics/deploy-your-site.md",
+              "sourceDirName": "Docusaur-Docs/tutorial-basics",
+              "slug": "/Docusaur-Docs/tutorial-basics/deploy-your-site",
+              "permalink": "/docs/Docusaur-Docs/tutorial-basics/deploy-your-site",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/Docusaur-Docs/tutorial-basics/deploy-your-site.md",
+              "version": "current",
+              "sidebarPosition": 5,
+              "frontMatter": {
+                "sidebar_position": 5
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Markdown Features",
+                "permalink": "/docs/Docusaur-Docs/tutorial-basics/markdown-features"
+              },
+              "next": {
+                "title": "Congratulations!",
+                "permalink": "/docs/Docusaur-Docs/tutorial-basics/congratulations"
+              }
+            },
+            {
+              "unversionedId": "Docusaur-Docs/tutorial-basics/markdown-features",
+              "id": "Docusaur-Docs/tutorial-basics/markdown-features",
+              "isDocsHomePage": false,
+              "title": "Markdown Features",
+              "description": "Docusaurus supports Markdown and a few additional features.",
+              "source": "@site/docs/Docusaur-Docs/tutorial-basics/markdown-features.mdx",
+              "sourceDirName": "Docusaur-Docs/tutorial-basics",
+              "slug": "/Docusaur-Docs/tutorial-basics/markdown-features",
+              "permalink": "/docs/Docusaur-Docs/tutorial-basics/markdown-features",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/Docusaur-Docs/tutorial-basics/markdown-features.mdx",
+              "version": "current",
+              "sidebarPosition": 4,
+              "frontMatter": {
+                "sidebar_position": 4
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Create a Blog Post",
+                "permalink": "/docs/Docusaur-Docs/tutorial-basics/create-a-blog-post"
+              },
+              "next": {
+                "title": "Deploy your site",
+                "permalink": "/docs/Docusaur-Docs/tutorial-basics/deploy-your-site"
+              }
+            },
+            {
+              "unversionedId": "Docusaur-Docs/tutorial-extras/manage-docs-versions",
+              "id": "Docusaur-Docs/tutorial-extras/manage-docs-versions",
+              "isDocsHomePage": false,
+              "title": "Manage Docs Versions",
+              "description": "Docusaurus can manage multiple versions of your docs.",
+              "source": "@site/docs/Docusaur-Docs/tutorial-extras/manage-docs-versions.md",
+              "sourceDirName": "Docusaur-Docs/tutorial-extras",
+              "slug": "/Docusaur-Docs/tutorial-extras/manage-docs-versions",
+              "permalink": "/docs/Docusaur-Docs/tutorial-extras/manage-docs-versions",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/Docusaur-Docs/tutorial-extras/manage-docs-versions.md",
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Congratulations!",
+                "permalink": "/docs/Docusaur-Docs/tutorial-basics/congratulations"
+              },
+              "next": {
+                "title": "Translate your site",
+                "permalink": "/docs/Docusaur-Docs/tutorial-extras/translate-your-site"
+              }
+            },
+            {
+              "unversionedId": "Docusaur-Docs/tutorial-extras/translate-your-site",
+              "id": "Docusaur-Docs/tutorial-extras/translate-your-site",
+              "isDocsHomePage": false,
+              "title": "Translate your site",
+              "description": "Let's translate docs/intro.md to French.",
+              "source": "@site/docs/Docusaur-Docs/tutorial-extras/translate-your-site.md",
+              "sourceDirName": "Docusaur-Docs/tutorial-extras",
+              "slug": "/Docusaur-Docs/tutorial-extras/translate-your-site",
+              "permalink": "/docs/Docusaur-Docs/tutorial-extras/translate-your-site",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/Docusaur-Docs/tutorial-extras/translate-your-site.md",
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "sidebar_position": 2
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Manage Docs Versions",
+                "permalink": "/docs/Docusaur-Docs/tutorial-extras/manage-docs-versions"
+              }
+            },
+            {
+              "unversionedId": "Extensions/Auto-Mocking/Mocking-Introduction",
+              "id": "Extensions/Auto-Mocking/Mocking-Introduction",
+              "isDocsHomePage": false,
+              "title": "Mocking-Introduction",
+              "description": "Test Doubles",
+              "source": "@site/docs/05-Extensions/010-Auto-Mocking/010-Mocking-Introduction.md",
+              "sourceDirName": "05-Extensions/010-Auto-Mocking",
+              "slug": "/Extensions/Auto-Mocking/Mocking-Introduction",
+              "permalink": "/docs/Extensions/Auto-Mocking/Mocking-Introduction",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/05-Extensions/010-Auto-Mocking/010-Mocking-Introduction.md",
+              "version": "current",
+              "sidebarPosition": 10,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Sub-Containers",
+                "permalink": "/docs/Advanced/Sub-Containers"
+              },
+              "next": {
+                "title": "Using-Moq",
+                "permalink": "/docs/Extensions/Auto-Mocking/Using-Moq"
+              }
+            },
+            {
+              "unversionedId": "Extensions/Auto-Mocking/Using-Moq",
+              "id": "Extensions/Auto-Mocking/Using-Moq",
+              "isDocsHomePage": false,
+              "title": "Using-Moq",
+              "description": "Using Moq",
+              "source": "@site/docs/05-Extensions/010-Auto-Mocking/020-Using-Moq.md",
+              "sourceDirName": "05-Extensions/010-Auto-Mocking",
+              "slug": "/Extensions/Auto-Mocking/Using-Moq",
+              "permalink": "/docs/Extensions/Auto-Mocking/Using-Moq",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/05-Extensions/010-Auto-Mocking/020-Using-Moq.md",
+              "version": "current",
+              "sidebarPosition": 20,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Mocking-Introduction",
+                "permalink": "/docs/Extensions/Auto-Mocking/Mocking-Introduction"
+              },
+              "next": {
+                "title": "Using-NSubstitute",
+                "permalink": "/docs/Extensions/Auto-Mocking/Using-NSubstitute"
+              }
+            },
+            {
+              "unversionedId": "Extensions/Auto-Mocking/Using-NSubstitute",
+              "id": "Extensions/Auto-Mocking/Using-NSubstitute",
+              "isDocsHomePage": false,
+              "title": "Using-NSubstitute",
+              "description": "Using NSubstitute",
+              "source": "@site/docs/05-Extensions/010-Auto-Mocking/030-Using-NSubstitute.md",
+              "sourceDirName": "05-Extensions/010-Auto-Mocking",
+              "slug": "/Extensions/Auto-Mocking/Using-NSubstitute",
+              "permalink": "/docs/Extensions/Auto-Mocking/Using-NSubstitute",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/05-Extensions/010-Auto-Mocking/030-Using-NSubstitute.md",
+              "version": "current",
+              "sidebarPosition": 30,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Using-Moq",
+                "permalink": "/docs/Extensions/Auto-Mocking/Using-Moq"
+              },
+              "next": {
+                "title": "Introduction",
+                "permalink": "/docs/Extensions/Signals/Introduction"
+              }
+            },
+            {
+              "unversionedId": "Extensions/Signals/Abstract-Signals",
+              "id": "Extensions/Signals/Abstract-Signals",
+              "isDocsHomePage": false,
+              "title": "Abstract-Signals",
+              "description": "Abstract Signals",
+              "source": "@site/docs/05-Extensions/020-Signals/050-Abstract-Signals.md",
+              "sourceDirName": "05-Extensions/020-Signals",
+              "slug": "/Extensions/Signals/Abstract-Signals",
+              "permalink": "/docs/Extensions/Signals/Abstract-Signals",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/05-Extensions/020-Signals/050-Abstract-Signals.md",
+              "version": "current",
+              "sidebarPosition": 50,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Signal-Binding",
+                "permalink": "/docs/Extensions/Signals/Signal-Binding"
+              },
+              "next": {
+                "title": "Signals-With-Subcontainers",
+                "permalink": "/docs/Extensions/Signals/Signals-With-Subcontainers"
+              }
+            },
+            {
+              "unversionedId": "Extensions/Signals/Asynchronous-Signals",
+              "id": "Extensions/Signals/Asynchronous-Signals",
+              "isDocsHomePage": false,
+              "title": "Asynchronous-Signals",
+              "description": "Asynchronous Signals",
+              "source": "@site/docs/05-Extensions/020-Signals/070-Asynchronous-Signals.md",
+              "sourceDirName": "05-Extensions/020-Signals",
+              "slug": "/Extensions/Signals/Asynchronous-Signals",
+              "permalink": "/docs/Extensions/Signals/Asynchronous-Signals",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/05-Extensions/020-Signals/070-Asynchronous-Signals.md",
+              "version": "current",
+              "sidebarPosition": 70,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Signals-With-Subcontainers",
+                "permalink": "/docs/Extensions/Signals/Signals-With-Subcontainers"
+              },
+              "next": {
+                "title": "Signals-Settings",
+                "permalink": "/docs/Extensions/Signals/Signals-Settings"
+              }
+            },
+            {
+              "unversionedId": "Extensions/Signals/Introduction",
+              "id": "Extensions/Signals/Introduction",
+              "isDocsHomePage": false,
+              "title": "Introduction",
+              "description": "Motivation / Theory",
+              "source": "@site/docs/05-Extensions/020-Signals/010-Introduction.md",
+              "sourceDirName": "05-Extensions/020-Signals",
+              "slug": "/Extensions/Signals/Introduction",
+              "permalink": "/docs/Extensions/Signals/Introduction",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/05-Extensions/020-Signals/010-Introduction.md",
+              "version": "current",
+              "sidebarPosition": 10,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Using-NSubstitute",
+                "permalink": "/docs/Extensions/Auto-Mocking/Using-NSubstitute"
+              },
+              "next": {
+                "title": "Signal-Declaration",
+                "permalink": "/docs/Extensions/Signals/Signal-Declaration"
+              }
+            },
+            {
+              "unversionedId": "Extensions/Signals/Signal-Binding",
+              "id": "Extensions/Signals/Signal-Binding",
+              "isDocsHomePage": false,
+              "title": "Signal-Binding",
+              "description": "Binding Signals with BindSignal",
+              "source": "@site/docs/05-Extensions/020-Signals/040-Signal-Binding.md",
+              "sourceDirName": "05-Extensions/020-Signals",
+              "slug": "/Extensions/Signals/Signal-Binding",
+              "permalink": "/docs/Extensions/Signals/Signal-Binding",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/05-Extensions/020-Signals/040-Signal-Binding.md",
+              "version": "current",
+              "sidebarPosition": 40,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Signal-Firing",
+                "permalink": "/docs/Extensions/Signals/Signal-Firing"
+              },
+              "next": {
+                "title": "Abstract-Signals",
+                "permalink": "/docs/Extensions/Signals/Abstract-Signals"
+              }
+            },
+            {
+              "unversionedId": "Extensions/Signals/Signal-Declaration",
+              "id": "Extensions/Signals/Signal-Declaration",
+              "isDocsHomePage": false,
+              "title": "Signal-Declaration",
+              "description": "Signals Declaration",
+              "source": "@site/docs/05-Extensions/020-Signals/020-Signal-Declaration.md",
+              "sourceDirName": "05-Extensions/020-Signals",
+              "slug": "/Extensions/Signals/Signal-Declaration",
+              "permalink": "/docs/Extensions/Signals/Signal-Declaration",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/05-Extensions/020-Signals/020-Signal-Declaration.md",
+              "version": "current",
+              "sidebarPosition": 20,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/docs/Extensions/Signals/Introduction"
+              },
+              "next": {
+                "title": "Signal-Firing",
+                "permalink": "/docs/Extensions/Signals/Signal-Firing"
+              }
+            },
+            {
+              "unversionedId": "Extensions/Signals/Signal-Firing",
+              "id": "Extensions/Signals/Signal-Firing",
+              "isDocsHomePage": false,
+              "title": "Signal-Firing",
+              "description": "Signal Firing",
+              "source": "@site/docs/05-Extensions/020-Signals/030-Signal-Firing.md",
+              "sourceDirName": "05-Extensions/020-Signals",
+              "slug": "/Extensions/Signals/Signal-Firing",
+              "permalink": "/docs/Extensions/Signals/Signal-Firing",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/05-Extensions/020-Signals/030-Signal-Firing.md",
+              "version": "current",
+              "sidebarPosition": 30,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Signal-Declaration",
+                "permalink": "/docs/Extensions/Signals/Signal-Declaration"
+              },
+              "next": {
+                "title": "Signal-Binding",
+                "permalink": "/docs/Extensions/Signals/Signal-Binding"
+              }
+            },
+            {
+              "unversionedId": "Extensions/Signals/Signals-Settings",
+              "id": "Extensions/Signals/Signals-Settings",
+              "isDocsHomePage": false,
+              "title": "Signals-Settings",
+              "description": "Signal Settings",
+              "source": "@site/docs/05-Extensions/020-Signals/080-Signals-Settings.md",
+              "sourceDirName": "05-Extensions/020-Signals",
+              "slug": "/Extensions/Signals/Signals-Settings",
+              "permalink": "/docs/Extensions/Signals/Signals-Settings",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/05-Extensions/020-Signals/080-Signals-Settings.md",
+              "version": "current",
+              "sidebarPosition": 80,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Asynchronous-Signals",
+                "permalink": "/docs/Extensions/Signals/Asynchronous-Signals"
+              },
+              "next": {
+                "title": "CheatSheet",
+                "permalink": "/docs/CheatSheet"
+              }
+            },
+            {
+              "unversionedId": "Extensions/Signals/Signals-With-Subcontainers",
+              "id": "Extensions/Signals/Signals-With-Subcontainers",
+              "isDocsHomePage": false,
+              "title": "Signals-With-Subcontainers",
+              "description": "Signals With Subcontainers",
+              "source": "@site/docs/05-Extensions/020-Signals/060-Signals-With-Subcontainers.md",
+              "sourceDirName": "05-Extensions/020-Signals",
+              "slug": "/Extensions/Signals/Signals-With-Subcontainers",
+              "permalink": "/docs/Extensions/Signals/Signals-With-Subcontainers",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/05-Extensions/020-Signals/060-Signals-With-Subcontainers.md",
+              "version": "current",
+              "sidebarPosition": 60,
+              "frontMatter": {},
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Abstract-Signals",
+                "permalink": "/docs/Extensions/Signals/Abstract-Signals"
+              },
+              "next": {
+                "title": "Asynchronous-Signals",
+                "permalink": "/docs/Extensions/Signals/Asynchronous-Signals"
+              }
+            },
+            {
+              "unversionedId": "Get Started/Hello-World",
+              "id": "Get Started/Hello-World",
+              "isDocsHomePage": false,
+              "title": "Hello World! Example",
+              "description": "A basic example of using dependency injection in Unity.",
+              "source": "@site/docs/02-Get Started/02-HelloWorld.md",
+              "sourceDirName": "02-Get Started",
+              "slug": "/Get Started/Hello-World",
+              "permalink": "/docs/Get Started/Hello-World",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/02-Get Started/02-HelloWorld.md",
+              "version": "current",
+              "sidebarPosition": 2,
+              "frontMatter": {
+                "id": "Hello-World",
+                "title": "Hello World! Example",
+                "description": "A basic example of using dependency injection in Unity."
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "Introduction",
+                "permalink": "/docs/Get Started/Introduction"
+              },
+              "next": {
+                "title": "Injection",
+                "permalink": "/docs/Basic Principles/Injection"
+              }
+            },
+            {
+              "unversionedId": "Get Started/Introduction",
+              "id": "Get Started/Introduction",
+              "isDocsHomePage": false,
+              "title": "Introduction",
+              "description": "An Introcuction to dependency injection",
+              "source": "@site/docs/02-Get Started/01-Introduction.md",
+              "sourceDirName": "02-Get Started",
+              "slug": "/Get Started/Introduction",
+              "permalink": "/docs/Get Started/Introduction",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/02-Get Started/01-Introduction.md",
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "title": "Introduction",
+                "description": "An Introcuction to dependency injection"
+              },
+              "sidebar": "tutorialSidebar",
+              "previous": {
+                "title": "UniDi Documentation",
+                "permalink": "/docs/intro"
+              },
+              "next": {
+                "title": "Hello World! Example",
+                "permalink": "/docs/Get Started/Hello-World"
+              }
+            },
+            {
+              "unversionedId": "intro",
+              "id": "intro",
+              "isDocsHomePage": false,
+              "title": "UniDi Documentation",
+              "description": "| Get started||",
+              "source": "@site/docs/intro.md",
+              "sourceDirName": ".",
+              "slug": "/intro",
+              "permalink": "/docs/intro",
+              "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/intro.md",
+              "version": "current",
+              "sidebarPosition": 1,
+              "frontMatter": {
+                "sidebar_position": 1
+              },
+              "sidebar": "tutorialSidebar",
+              "next": {
+                "title": "Introduction",
+                "permalink": "/docs/Get Started/Introduction"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "docusaurus-plugin-content-blog": {
+    "default": {
+      "blogPosts": [
+        {
+          "id": "welcome",
+          "metadata": {
+            "permalink": "/blog/welcome",
+            "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/blog/blog/2019-05-30-welcome.md",
+            "source": "@site/blog/2019-05-30-welcome.md",
+            "title": "Welcome",
+            "description": "Blog features are powered by the blog plugin. Simply add files to the blog directory. It supports tags as well!",
+            "date": "2019-05-30T00:00:00.000Z",
+            "formattedDate": "May 30, 2019",
+            "tags": [
+              {
+                "label": "facebook",
+                "permalink": "/blog/tags/facebook"
+              },
+              {
+                "label": "hello",
+                "permalink": "/blog/tags/hello"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.175,
+            "truncated": false,
+            "nextItem": {
+              "title": "Hello",
+              "permalink": "/blog/hello-world"
+            }
+          }
+        },
+        {
+          "id": "hello-world",
+          "metadata": {
+            "permalink": "/blog/hello-world",
+            "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/blog/blog/2019-05-29-hello-world.md",
+            "source": "@site/blog/2019-05-29-hello-world.md",
+            "title": "Hello",
+            "description": "Welcome to this blog. This blog is created with Docusaurus 2 alpha.",
+            "date": "2019-05-29T00:00:00.000Z",
+            "formattedDate": "May 29, 2019",
+            "tags": [
+              {
+                "label": "hello",
+                "permalink": "/blog/tags/hello"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.12,
+            "truncated": true,
+            "prevItem": {
+              "title": "Welcome",
+              "permalink": "/blog/welcome"
+            },
+            "nextItem": {
+              "title": "Hola",
+              "permalink": "/blog/hola"
+            }
+          }
+        },
+        {
+          "id": "hola",
+          "metadata": {
+            "permalink": "/blog/hola",
+            "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/blog/blog/2019-05-28-hola.md",
+            "source": "@site/blog/2019-05-28-hola.md",
+            "title": "Hola",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet",
+            "date": "2019-05-28T00:00:00.000Z",
+            "formattedDate": "May 28, 2019",
+            "tags": [
+              {
+                "label": "hola",
+                "permalink": "/blog/tags/hola"
+              },
+              {
+                "label": "docusaurus",
+                "permalink": "/blog/tags/docusaurus"
+              }
+            ],
+            "readingTime": 0.12,
+            "truncated": false,
+            "prevItem": {
+              "title": "Hello",
+              "permalink": "/blog/hello-world"
+            }
+          }
+        }
+      ],
+      "blogListPaginated": [
+        {
+          "metadata": {
+            "permalink": "/blog",
+            "page": 1,
+            "postsPerPage": 10,
+            "totalPages": 1,
+            "totalCount": 3,
+            "previousPage": null,
+            "nextPage": null,
+            "blogDescription": "Blog",
+            "blogTitle": "Blog"
+          },
+          "items": [
+            "welcome",
+            "hello-world",
+            "hola"
+          ]
+        }
+      ],
+      "blogTags": {
+        "facebook": {
+          "name": "facebook",
+          "items": [
+            "welcome"
+          ],
+          "permalink": "/blog/tags/facebook"
+        },
+        "hello": {
+          "name": "hello",
+          "items": [
+            "welcome",
+            "hello-world"
+          ],
+          "permalink": "/blog/tags/hello"
+        },
+        "docusaurus": {
+          "name": "docusaurus",
+          "items": [
+            "welcome",
+            "hello-world",
+            "hola"
+          ],
+          "permalink": "/blog/tags/docusaurus"
+        },
+        "hola": {
+          "name": "hola",
+          "items": [
+            "hola"
+          ],
+          "permalink": "/blog/tags/hola"
+        }
+      },
+      "blogTagsListPath": "/blog/tags"
+    }
+  },
+  "docusaurus-plugin-content-pages": {
+    "default": [
+      {
+        "type": "jsx",
+        "permalink": "/",
+        "source": "@site/src/pages/index.js"
+      },
+      {
+        "type": "mdx",
+        "permalink": "/markdown-page",
+        "source": "@site/src/pages/markdown-page.md"
+      }
+    ]
+  },
+  "docusaurus-plugin-debug": {
+    "default": null
+  },
+  "docusaurus-theme-classic": {
+    "default": null
+  }
+}

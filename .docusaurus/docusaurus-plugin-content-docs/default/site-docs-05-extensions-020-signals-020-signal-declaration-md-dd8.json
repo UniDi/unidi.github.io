@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Extensions/Signals/Signal-Declaration",
+  "id": "Extensions/Signals/Signal-Declaration",
+  "isDocsHomePage": false,
+  "title": "Signal-Declaration",
+  "description": "Signals Declaration",
+  "source": "@site/docs/05-Extensions/020-Signals/020-Signal-Declaration.md",
+  "sourceDirName": "05-Extensions/020-Signals",
+  "slug": "/Extensions/Signals/Signal-Declaration",
+  "permalink": "/docs/Extensions/Signals/Signal-Declaration",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/05-Extensions/020-Signals/020-Signal-Declaration.md",
+  "version": "current",
+  "sidebarPosition": 20,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/Extensions/Signals/Introduction"
+  },
+  "next": {
+    "title": "Signal-Firing",
+    "permalink": "/docs/Extensions/Signals/Signal-Firing"
+  }
+}

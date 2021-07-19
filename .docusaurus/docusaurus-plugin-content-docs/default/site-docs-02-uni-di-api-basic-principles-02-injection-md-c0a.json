@@ -1,0 +1,24 @@
+{
+  "unversionedId": "UniDi API - Basic Principles/Injection",
+  "id": "UniDi API - Basic Principles/Injection",
+  "isDocsHomePage": false,
+  "title": "Injection",
+  "description": "There are many different ways of declaring dependencies on the container, which are documented in the next section.  There are also several ways of having these dependencies injected into your classes. These are:",
+  "source": "@site/docs/02-UniDi API - Basic Principles/02-Injection.md",
+  "sourceDirName": "02-UniDi API - Basic Principles",
+  "slug": "/UniDi API - Basic Principles/Injection",
+  "permalink": "/docs/UniDi API - Basic Principles/Injection",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/02-UniDi API - Basic Principles/02-Injection.md",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "UniDi Documentation",
+    "permalink": "/docs/intro"
+  },
+  "next": {
+    "title": "Registering objects",
+    "permalink": "/docs/UniDi API - Basic Principles/Registering"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Docusaur-Docs/tutorial-basics/create-a-page",
+  "id": "Docusaur-Docs/tutorial-basics/create-a-page",
+  "isDocsHomePage": false,
+  "title": "Create a Page",
+  "description": "Add Markdown or React files to src/pages to create a standalone page:",
+  "source": "@site/docs/Docusaur-Docs/tutorial-basics/create-a-page.md",
+  "sourceDirName": "Docusaur-Docs/tutorial-basics",
+  "slug": "/Docusaur-Docs/tutorial-basics/create-a-page",
+  "permalink": "/docs/Docusaur-Docs/tutorial-basics/create-a-page",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/Docusaur-Docs/tutorial-basics/create-a-page.md",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "CheatSheet",
+    "permalink": "/docs/CheatSheet"
+  },
+  "next": {
+    "title": "Create a Document",
+    "permalink": "/docs/Docusaur-Docs/tutorial-basics/create-a-document"
+  }
+}

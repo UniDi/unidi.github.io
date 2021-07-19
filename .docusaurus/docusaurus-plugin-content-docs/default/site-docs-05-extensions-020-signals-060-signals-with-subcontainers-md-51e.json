@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Extensions/Signals/Signals-With-Subcontainers",
+  "id": "Extensions/Signals/Signals-With-Subcontainers",
+  "isDocsHomePage": false,
+  "title": "Signals-With-Subcontainers",
+  "description": "Signals With Subcontainers",
+  "source": "@site/docs/05-Extensions/020-Signals/060-Signals-With-Subcontainers.md",
+  "sourceDirName": "05-Extensions/020-Signals",
+  "slug": "/Extensions/Signals/Signals-With-Subcontainers",
+  "permalink": "/docs/Extensions/Signals/Signals-With-Subcontainers",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/05-Extensions/020-Signals/060-Signals-With-Subcontainers.md",
+  "version": "current",
+  "sidebarPosition": 60,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Abstract-Signals",
+    "permalink": "/docs/Extensions/Signals/Abstract-Signals"
+  },
+  "next": {
+    "title": "Asynchronous-Signals",
+    "permalink": "/docs/Extensions/Signals/Asynchronous-Signals"
+  }
+}

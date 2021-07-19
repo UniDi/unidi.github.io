@@ -1,0 +1,22 @@
+{
+  "unversionedId": "Docusaur-Docs/tutorial-extras/translate-your-site",
+  "id": "Docusaur-Docs/tutorial-extras/translate-your-site",
+  "isDocsHomePage": false,
+  "title": "Translate your site",
+  "description": "Let's translate docs/intro.md to French.",
+  "source": "@site/docs/Docusaur-Docs/tutorial-extras/translate-your-site.md",
+  "sourceDirName": "Docusaur-Docs/tutorial-extras",
+  "slug": "/Docusaur-Docs/tutorial-extras/translate-your-site",
+  "permalink": "/docs/Docusaur-Docs/tutorial-extras/translate-your-site",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/Docusaur-Docs/tutorial-extras/translate-your-site.md",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "sidebar_position": 2
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Manage Docs Versions",
+    "permalink": "/docs/Docusaur-Docs/tutorial-extras/manage-docs-versions"
+  }
+}

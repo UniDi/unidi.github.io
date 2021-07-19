@@ -1,0 +1,24 @@
+{
+  "unversionedId": "UniDiAPI-BasicPrinciples/Using-Non-MonoBehaviours",
+  "id": "UniDiAPI-BasicPrinciples/Using-Non-MonoBehaviours",
+  "isDocsHomePage": false,
+  "title": "Using Non-MonoBehaviour Classes",
+  "description": "ITickable",
+  "source": "@site/docs/03-UniDiAPI-BasicPrinciples/05-Using-Non-MonoBehaviours.md",
+  "sourceDirName": "03-UniDiAPI-BasicPrinciples",
+  "slug": "/UniDiAPI-BasicPrinciples/Using-Non-MonoBehaviours",
+  "permalink": "/docs/UniDiAPI-BasicPrinciples/Using-Non-MonoBehaviours",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/03-UniDiAPI-BasicPrinciples/05-Using-Non-MonoBehaviours.md",
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installers",
+    "permalink": "/docs/UniDiAPI-BasicPrinciples/Installers"
+  },
+  "next": {
+    "title": "Create a Page",
+    "permalink": "/docs/Docusaur-Docs/tutorial-basics/create-a-page"
+  }
+}

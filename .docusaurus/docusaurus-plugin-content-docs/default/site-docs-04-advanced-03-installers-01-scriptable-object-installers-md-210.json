@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Advanced/Installers/ScriptableObject_Installers",
+  "id": "Advanced/Installers/ScriptableObject_Installers",
+  "isDocsHomePage": false,
+  "title": "ScriptableObject_Installers",
+  "description": "ScriptableObject Installer",
+  "source": "@site/docs/04-Advanced/03-Installers/01-ScriptableObject_Installers.md",
+  "sourceDirName": "04-Advanced/03-Installers",
+  "slug": "/Advanced/Installers/ScriptableObject_Installers",
+  "permalink": "/docs/Advanced/Installers/ScriptableObject_Installers",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/04-Advanced/03-Installers/01-ScriptableObject_Installers.md",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Injection",
+    "permalink": "/docs/Advanced/Injections"
+  },
+  "next": {
+    "title": "Installers",
+    "permalink": "/docs/Advanced/Installers/Installers"
+  }
+}

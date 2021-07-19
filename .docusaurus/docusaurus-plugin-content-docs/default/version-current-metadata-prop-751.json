@@ -1,0 +1,340 @@
+{
+  "pluginId": "default",
+  "version": "current",
+  "label": "Next",
+  "isLast": true,
+  "docsSidebars": {
+    "tutorialSidebar": [
+      {
+        "type": "link",
+        "label": "UniDi Documentation",
+        "href": "/docs/intro"
+      },
+      {
+        "type": "category",
+        "label": "Get Started",
+        "items": [
+          {
+            "type": "link",
+            "label": "Introduction",
+            "href": "/docs/Get Started/Introduction"
+          },
+          {
+            "type": "link",
+            "label": "Hello World! Example",
+            "href": "/docs/Get Started/Hello-World"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "type": "category",
+        "label": "Basic Principles",
+        "items": [
+          {
+            "type": "link",
+            "label": "Injection",
+            "href": "/docs/Basic Principles/Injection"
+          },
+          {
+            "type": "link",
+            "label": "Binding",
+            "href": "/docs/Basic Principles/Binding"
+          },
+          {
+            "type": "link",
+            "label": "Construction Methods",
+            "href": "/docs/Basic Principles/Construction Methods"
+          },
+          {
+            "type": "link",
+            "label": "Installers",
+            "href": "/docs/Basic Principles/Installers"
+          },
+          {
+            "type": "link",
+            "label": "Using Non-MonoBehaviour Classes",
+            "href": "/docs/Basic Principles/Using-Non-MonoBehaviour-Classes"
+          },
+          {
+            "type": "link",
+            "label": "Object Graph Validation",
+            "href": "/docs/Basic Principles/Object-Graph-Validation"
+          },
+          {
+            "type": "link",
+            "label": "Bind MonoBehaviours In The Scene",
+            "href": "/docs/Basic Principles/Bind-MonoBehaviours-In-Scene"
+          },
+          {
+            "type": "link",
+            "label": "General Guidelines",
+            "href": "/docs/Basic Principles/General-Guidelines-Tips-And-Tricks"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "type": "category",
+        "label": "Advanced",
+        "items": [
+          {
+            "type": "link",
+            "label": "Binding",
+            "href": "/docs/Advanced/Bindings"
+          },
+          {
+            "type": "link",
+            "label": "Injection",
+            "href": "/docs/Advanced/Injections"
+          },
+          {
+            "type": "category",
+            "label": "Installers",
+            "items": [
+              {
+                "type": "link",
+                "label": "ScriptableObject Installer",
+                "href": "/docs/Advanced/Installers/ScriptableObject-Installers"
+              },
+              {
+                "type": "link",
+                "label": "Composite-Installer",
+                "href": "/docs/Advanced/Installers/Composite-Installer"
+              },
+              {
+                "type": "link",
+                "label": "Runtime-Parameters-For-Installers",
+                "href": "/docs/Advanced/Installers/Runtime-Parameters-For-Installers"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "type": "link",
+            "label": "UniDi-For-Non-Unity-projects",
+            "href": "/docs/Advanced/UniDi-For-Non-Unity-projects"
+          },
+          {
+            "type": "link",
+            "label": "UniDi-Settings",
+            "href": "/docs/Advanced/UniDi-Settings"
+          },
+          {
+            "type": "link",
+            "label": "UniDi-Factories",
+            "href": "/docs/Advanced/UniDi-Factories"
+          },
+          {
+            "type": "link",
+            "label": "Memory-Pools",
+            "href": "/docs/Advanced/Memory-Pools"
+          },
+          {
+            "type": "link",
+            "label": "Decorator-Bindings",
+            "href": "/docs/Advanced/Decorator-Bindings"
+          },
+          {
+            "type": "link",
+            "label": "Writing Automated Tests",
+            "href": "/docs/Advanced/UniDi-Test-Framework"
+          },
+          {
+            "type": "link",
+            "label": "Sub-Containers",
+            "href": "/docs/Advanced/Sub-Containers"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "type": "category",
+        "label": "Extensions",
+        "items": [
+          {
+            "type": "category",
+            "label": "Auto-Mocking",
+            "items": [
+              {
+                "type": "link",
+                "label": "Mocking-Introduction",
+                "href": "/docs/Extensions/Auto-Mocking/Mocking-Introduction"
+              },
+              {
+                "type": "link",
+                "label": "Using-Moq",
+                "href": "/docs/Extensions/Auto-Mocking/Using-Moq"
+              },
+              {
+                "type": "link",
+                "label": "Using-NSubstitute",
+                "href": "/docs/Extensions/Auto-Mocking/Using-NSubstitute"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "type": "category",
+            "label": "Signals",
+            "items": [
+              {
+                "type": "link",
+                "label": "Introduction",
+                "href": "/docs/Extensions/Signals/Introduction"
+              },
+              {
+                "type": "link",
+                "label": "Signal-Declaration",
+                "href": "/docs/Extensions/Signals/Signal-Declaration"
+              },
+              {
+                "type": "link",
+                "label": "Signal-Firing",
+                "href": "/docs/Extensions/Signals/Signal-Firing"
+              },
+              {
+                "type": "link",
+                "label": "Signal-Binding",
+                "href": "/docs/Extensions/Signals/Signal-Binding"
+              },
+              {
+                "type": "link",
+                "label": "Abstract-Signals",
+                "href": "/docs/Extensions/Signals/Abstract-Signals"
+              },
+              {
+                "type": "link",
+                "label": "Signals-With-Subcontainers",
+                "href": "/docs/Extensions/Signals/Signals-With-Subcontainers"
+              },
+              {
+                "type": "link",
+                "label": "Asynchronous-Signals",
+                "href": "/docs/Extensions/Signals/Asynchronous-Signals"
+              },
+              {
+                "type": "link",
+                "label": "Signals-Settings",
+                "href": "/docs/Extensions/Signals/Signals-Settings"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "type": "link",
+        "label": "CheatSheet",
+        "href": "/docs/CheatSheet"
+      },
+      {
+        "type": "category",
+        "label": "Docusaur-Docs",
+        "items": [
+          {
+            "type": "category",
+            "label": "Tutorial - Basics",
+            "items": [
+              {
+                "type": "link",
+                "label": "Create a Page",
+                "href": "/docs/Docusaur-Docs/tutorial-basics/create-a-page"
+              },
+              {
+                "type": "link",
+                "label": "Create a Document",
+                "href": "/docs/Docusaur-Docs/tutorial-basics/create-a-document"
+              },
+              {
+                "type": "link",
+                "label": "Create a Blog Post",
+                "href": "/docs/Docusaur-Docs/tutorial-basics/create-a-blog-post"
+              },
+              {
+                "type": "link",
+                "label": "Markdown Features",
+                "href": "/docs/Docusaur-Docs/tutorial-basics/markdown-features"
+              },
+              {
+                "type": "link",
+                "label": "Deploy your site",
+                "href": "/docs/Docusaur-Docs/tutorial-basics/deploy-your-site"
+              },
+              {
+                "type": "link",
+                "label": "Congratulations!",
+                "href": "/docs/Docusaur-Docs/tutorial-basics/congratulations"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "type": "category",
+            "label": "Tutorial - Extras",
+            "items": [
+              {
+                "type": "link",
+                "label": "Manage Docs Versions",
+                "href": "/docs/Docusaur-Docs/tutorial-extras/manage-docs-versions"
+              },
+              {
+                "type": "link",
+                "label": "Translate your site",
+                "href": "/docs/Docusaur-Docs/tutorial-extras/translate-your-site"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": true
+      }
+    ]
+  },
+  "permalinkToSidebar": {
+    "/docs/Advanced/Bindings": "tutorialSidebar",
+    "/docs/Advanced/Decorator-Bindings": "tutorialSidebar",
+    "/docs/Advanced/Injections": "tutorialSidebar",
+    "/docs/Advanced/Installers/Composite-Installer": "tutorialSidebar",
+    "/docs/Advanced/Installers/Runtime-Parameters-For-Installers": "tutorialSidebar",
+    "/docs/Advanced/Installers/ScriptableObject-Installers": "tutorialSidebar",
+    "/docs/Advanced/Memory-Pools": "tutorialSidebar",
+    "/docs/Advanced/Sub-Containers": "tutorialSidebar",
+    "/docs/Advanced/UniDi-Factories": "tutorialSidebar",
+    "/docs/Advanced/UniDi-For-Non-Unity-projects": "tutorialSidebar",
+    "/docs/Advanced/UniDi-Settings": "tutorialSidebar",
+    "/docs/Advanced/UniDi-Test-Framework": "tutorialSidebar",
+    "/docs/Basic Principles/Bind-MonoBehaviours-In-Scene": "tutorialSidebar",
+    "/docs/Basic Principles/Binding": "tutorialSidebar",
+    "/docs/Basic Principles/Construction Methods": "tutorialSidebar",
+    "/docs/Basic Principles/General-Guidelines-Tips-And-Tricks": "tutorialSidebar",
+    "/docs/Basic Principles/Injection": "tutorialSidebar",
+    "/docs/Basic Principles/Installers": "tutorialSidebar",
+    "/docs/Basic Principles/Object-Graph-Validation": "tutorialSidebar",
+    "/docs/Basic Principles/Using-Non-MonoBehaviour-Classes": "tutorialSidebar",
+    "/docs/CheatSheet": "tutorialSidebar",
+    "/docs/Docusaur-Docs/tutorial-basics/congratulations": "tutorialSidebar",
+    "/docs/Docusaur-Docs/tutorial-basics/create-a-blog-post": "tutorialSidebar",
+    "/docs/Docusaur-Docs/tutorial-basics/create-a-document": "tutorialSidebar",
+    "/docs/Docusaur-Docs/tutorial-basics/create-a-page": "tutorialSidebar",
+    "/docs/Docusaur-Docs/tutorial-basics/deploy-your-site": "tutorialSidebar",
+    "/docs/Docusaur-Docs/tutorial-basics/markdown-features": "tutorialSidebar",
+    "/docs/Docusaur-Docs/tutorial-extras/manage-docs-versions": "tutorialSidebar",
+    "/docs/Docusaur-Docs/tutorial-extras/translate-your-site": "tutorialSidebar",
+    "/docs/Extensions/Auto-Mocking/Mocking-Introduction": "tutorialSidebar",
+    "/docs/Extensions/Auto-Mocking/Using-Moq": "tutorialSidebar",
+    "/docs/Extensions/Auto-Mocking/Using-NSubstitute": "tutorialSidebar",
+    "/docs/Extensions/Signals/Abstract-Signals": "tutorialSidebar",
+    "/docs/Extensions/Signals/Asynchronous-Signals": "tutorialSidebar",
+    "/docs/Extensions/Signals/Introduction": "tutorialSidebar",
+    "/docs/Extensions/Signals/Signal-Binding": "tutorialSidebar",
+    "/docs/Extensions/Signals/Signal-Declaration": "tutorialSidebar",
+    "/docs/Extensions/Signals/Signal-Firing": "tutorialSidebar",
+    "/docs/Extensions/Signals/Signals-Settings": "tutorialSidebar",
+    "/docs/Extensions/Signals/Signals-With-Subcontainers": "tutorialSidebar",
+    "/docs/Get Started/Hello-World": "tutorialSidebar",
+    "/docs/Get Started/Introduction": "tutorialSidebar",
+    "/docs/intro": "tutorialSidebar"
+  }
+}

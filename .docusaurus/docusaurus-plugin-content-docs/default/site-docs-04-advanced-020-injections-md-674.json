@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Advanced/Injections",
+  "id": "Advanced/Injections",
+  "isDocsHomePage": false,
+  "title": "Injection",
+  "description": "HR",
+  "source": "@site/docs/04-Advanced/020-Injections.md",
+  "sourceDirName": "04-Advanced",
+  "slug": "/Advanced/Injections",
+  "permalink": "/docs/Advanced/Injections",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/04-Advanced/020-Injections.md",
+  "version": "current",
+  "sidebarPosition": 20,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Binding",
+    "permalink": "/docs/Advanced/Bindings"
+  },
+  "next": {
+    "title": "ScriptableObject Installer",
+    "permalink": "/docs/Advanced/Installers/ScriptableObject-Installers"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Advanced/Decorator-Bindings",
+  "id": "Advanced/Decorator-Bindings",
+  "isDocsHomePage": false,
+  "title": "Decorator-Bindings",
+  "description": "Introduction",
+  "source": "@site/docs/04-Advanced/080-Decorator-Bindings.md",
+  "sourceDirName": "04-Advanced",
+  "slug": "/Advanced/Decorator-Bindings",
+  "permalink": "/docs/Advanced/Decorator-Bindings",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/04-Advanced/080-Decorator-Bindings.md",
+  "version": "current",
+  "sidebarPosition": 80,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Memory-Pools",
+    "permalink": "/docs/Advanced/Memory-Pools"
+  },
+  "next": {
+    "title": "Writing Automated Tests",
+    "permalink": "/docs/Advanced/UniDi-Test-Framework"
+  }
+}

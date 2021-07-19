@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Advanced/Installers/ScriptableObject-Installers",
+  "id": "Advanced/Installers/ScriptableObject-Installers",
+  "isDocsHomePage": false,
+  "title": "ScriptableObject Installer",
+  "description": "One of the most powerful scripting features in Unity are ScriptableObjects. They are data containers that let you save and store data in both Editor session and in runtime. Just like MonoBehaviours, ScriptableObjects derive from the base Unity object but, unlike MonoBehaviours, you can not attach a ScriptableObject to a GameObject. Instead, you need to save them as Assets in your Project.",
+  "source": "@site/docs/04-Advanced/30-Installers/01-ScriptableObject-Installers.md",
+  "sourceDirName": "04-Advanced/30-Installers",
+  "slug": "/Advanced/Installers/ScriptableObject-Installers",
+  "permalink": "/docs/Advanced/Installers/ScriptableObject-Installers",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/04-Advanced/30-Installers/01-ScriptableObject-Installers.md",
+  "version": "current",
+  "sidebar_label": "ScriptableObject Installer",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_label": "ScriptableObject Installer"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Injection",
+    "permalink": "/docs/Advanced/Injections"
+  },
+  "next": {
+    "title": "Composite-Installer",
+    "permalink": "/docs/Advanced/Installers/Composite-Installer"
+  }
+}

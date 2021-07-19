@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Extensions/Auto-Mocking/Mocking-Introduction",
+  "id": "Extensions/Auto-Mocking/Mocking-Introduction",
+  "isDocsHomePage": false,
+  "title": "Mocking-Introduction",
+  "description": "Test Doubles",
+  "source": "@site/docs/05-Extensions/010-Auto-Mocking/010-Mocking-Introduction.md",
+  "sourceDirName": "05-Extensions/010-Auto-Mocking",
+  "slug": "/Extensions/Auto-Mocking/Mocking-Introduction",
+  "permalink": "/docs/Extensions/Auto-Mocking/Mocking-Introduction",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/05-Extensions/010-Auto-Mocking/010-Mocking-Introduction.md",
+  "version": "current",
+  "sidebarPosition": 10,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Sub-Containers",
+    "permalink": "/docs/Advanced/Sub-Containers"
+  },
+  "next": {
+    "title": "Using-Moq",
+    "permalink": "/docs/Extensions/Auto-Mocking/Using-Moq"
+  }
+}

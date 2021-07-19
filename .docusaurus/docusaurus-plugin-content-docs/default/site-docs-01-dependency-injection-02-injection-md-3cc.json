@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Dependency Injection/Injection",
+  "id": "Dependency Injection/Injection",
+  "isDocsHomePage": false,
+  "title": "Injection",
+  "description": "",
+  "source": "@site/docs/01-Dependency Injection/02-Injection.md",
+  "sourceDirName": "01-Dependency Injection",
+  "slug": "/Dependency Injection/Injection",
+  "permalink": "/docs/Dependency Injection/Injection",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/01-Dependency Injection/02-Injection.md",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "UniDi API - an introduction",
+    "permalink": "/docs/Dependency Injection/Hello-World-An-Introduction-to-UniDi"
+  },
+  "next": {
+    "title": "Tutorial Intro",
+    "permalink": "/docs/intro"
+  }
+}

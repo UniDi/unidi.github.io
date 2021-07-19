@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Basic Principles/Installers",
+  "id": "Basic Principles/Installers",
+  "isDocsHomePage": false,
+  "title": "Installers",
+  "description": "Often, there is some collections of related bindings for each sub-system and so it makes sense to group those bindings into a re-usable object.  In UniDi this re-usable object is called an 'installer'.  You can define a new installer as follows:",
+  "source": "@site/docs/03-Basic Principles/04-Installers.md",
+  "sourceDirName": "03-Basic Principles",
+  "slug": "/Basic Principles/Installers",
+  "permalink": "/docs/Basic Principles/Installers",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/03-Basic Principles/04-Installers.md",
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Construction-Methods",
+    "permalink": "/docs/Basic Principles/Construction-Methods"
+  },
+  "next": {
+    "title": "Using Non-MonoBehaviour Classes",
+    "permalink": "/docs/Basic Principles/Using-Non-MonoBehaviours"
+  }
+}

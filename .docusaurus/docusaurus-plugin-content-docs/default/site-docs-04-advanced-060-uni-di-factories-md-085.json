@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Advanced/UniDi-Factories",
+  "id": "Advanced/UniDi-Factories",
+  "isDocsHomePage": false,
+  "title": "UniDi-Factories",
+  "description": "Dynamically Creating Objects with Factories",
+  "source": "@site/docs/04-Advanced/060-UniDi-Factories.md",
+  "sourceDirName": "04-Advanced",
+  "slug": "/Advanced/UniDi-Factories",
+  "permalink": "/docs/Advanced/UniDi-Factories",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/04-Advanced/060-UniDi-Factories.md",
+  "version": "current",
+  "sidebarPosition": 60,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "UniDi-Settings",
+    "permalink": "/docs/Advanced/UniDi-Settings"
+  },
+  "next": {
+    "title": "Memory-Pools",
+    "permalink": "/docs/Advanced/Memory-Pools"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Basic Principles/Object-Graph-Validation",
+  "id": "Basic Principles/Object-Graph-Validation",
+  "isDocsHomePage": false,
+  "title": "Object Graph Validation",
+  "description": "HR",
+  "source": "@site/docs/03-Basic Principles/07-Object-Graph-Validation.md",
+  "sourceDirName": "03-Basic Principles",
+  "slug": "/Basic Principles/Object-Graph-Validation",
+  "permalink": "/docs/Basic Principles/Object-Graph-Validation",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/03-Basic Principles/07-Object-Graph-Validation.md",
+  "version": "current",
+  "sidebarPosition": 7,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Using Non-MonoBehaviour Classes",
+    "permalink": "/docs/Basic Principles/Using-Non-MonoBehaviour-Classes"
+  },
+  "next": {
+    "title": "Bind MonoBehaviours In The Scene",
+    "permalink": "/docs/Basic Principles/Bind-MonoBehaviours-In-Scene"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Extensions/Signals/Signals-Settings",
+  "id": "Extensions/Signals/Signals-Settings",
+  "isDocsHomePage": false,
+  "title": "Signals-Settings",
+  "description": "Signal Settings",
+  "source": "@site/docs/05-Extensions/020-Signals/080-Signals-Settings.md",
+  "sourceDirName": "05-Extensions/020-Signals",
+  "slug": "/Extensions/Signals/Signals-Settings",
+  "permalink": "/docs/Extensions/Signals/Signals-Settings",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/05-Extensions/020-Signals/080-Signals-Settings.md",
+  "version": "current",
+  "sidebarPosition": 80,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Asynchronous-Signals",
+    "permalink": "/docs/Extensions/Signals/Asynchronous-Signals"
+  },
+  "next": {
+    "title": "CheatSheet",
+    "permalink": "/docs/CheatSheet"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Basic Principles/Bindings",
+  "id": "Basic Principles/Bindings",
+  "isDocsHomePage": false,
+  "title": "Bindings",
+  "description": "This article explains how to use the Bind<>() method for registering dependencies into the Di-container.",
+  "source": "@site/docs/03-Basic Principles/03-Bindings.md",
+  "sourceDirName": "03-Basic Principles",
+  "slug": "/Basic Principles/Bindings",
+  "permalink": "/docs/Basic Principles/Bindings",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/03-Basic Principles/03-Bindings.md",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "id": "Bindings",
+    "description": "This article explains how to use the Bind<>() method for registering dependencies into the Di-container."
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Injection",
+    "permalink": "/docs/Basic Principles/Injection"
+  },
+  "next": {
+    "title": "Installers",
+    "permalink": "/docs/Basic Principles/Installers"
+  }
+}

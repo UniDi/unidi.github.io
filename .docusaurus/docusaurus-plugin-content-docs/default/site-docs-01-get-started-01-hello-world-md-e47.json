@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Get started/Hello-World-An-Introduction-to-UniDi",
+  "id": "Get started/Hello-World-An-Introduction-to-UniDi",
+  "isDocsHomePage": false,
+  "title": "UniDi API - an introduction",
+  "description": "An introduction to UniDi's API",
+  "source": "@site/docs/01-Get started/01-HelloWorld.md",
+  "sourceDirName": "01-Get started",
+  "slug": "/Get started/Hello-World-An-Introduction-to-UniDi",
+  "permalink": "/docs/Get started/Hello-World-An-Introduction-to-UniDi",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/01-Get started/01-HelloWorld.md",
+  "version": "current",
+  "sidebar_label": "Hello World!",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "id": "Hello-World-An-Introduction-to-UniDi",
+    "title": "Hello World!",
+    "description": "An introduction to UniDi's API",
+    "sidebar_label": "Hello World!"
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Introduction",
+    "permalink": "/docs/Get started/Introduction"
+  }
+}

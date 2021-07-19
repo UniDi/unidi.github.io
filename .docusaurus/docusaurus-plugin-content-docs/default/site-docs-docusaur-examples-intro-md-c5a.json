@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Docusaur-Examples/intro",
+  "id": "Docusaur-Examples/intro",
+  "isDocsHomePage": false,
+  "title": "Tutorial Intro",
+  "description": "Let's discover Docusaurus in less than 5 minutes.",
+  "source": "@site/docs/Docusaur-Examples/intro.md",
+  "sourceDirName": "Docusaur-Examples",
+  "slug": "/Docusaur-Examples/intro",
+  "permalink": "/docs/Docusaur-Examples/intro",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/Docusaur-Examples/intro.md",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "sidebar_position": 1
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Using Non-MonoBehaviour Classes",
+    "permalink": "/docs/UniDi API - Basic Principles/Using-Non-MonoBehaviours"
+  },
+  "next": {
+    "title": "Create a Page",
+    "permalink": "/docs/Docusaur-Examples/tutorial-basics/create-a-page"
+  }
+}

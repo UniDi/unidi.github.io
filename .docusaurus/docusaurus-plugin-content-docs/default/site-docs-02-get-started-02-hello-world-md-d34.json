@@ -1,0 +1,28 @@
+{
+  "unversionedId": "Get Started/Hello-World",
+  "id": "Get Started/Hello-World",
+  "isDocsHomePage": false,
+  "title": "Hello World! Example",
+  "description": "A basic example of using dependency injection in Unity.",
+  "source": "@site/docs/02-Get Started/02-HelloWorld.md",
+  "sourceDirName": "02-Get Started",
+  "slug": "/Get Started/Hello-World",
+  "permalink": "/docs/Get Started/Hello-World",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/02-Get Started/02-HelloWorld.md",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "Hello-World",
+    "title": "Hello World! Example",
+    "description": "A basic example of using dependency injection in Unity."
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/Get Started/Introduction"
+  },
+  "next": {
+    "title": "Injection",
+    "permalink": "/docs/Basic Principles/Injection"
+  }
+}

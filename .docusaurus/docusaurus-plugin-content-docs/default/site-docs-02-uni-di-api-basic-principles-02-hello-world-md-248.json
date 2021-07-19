@@ -1,0 +1,30 @@
+{
+  "unversionedId": "UniDi API - Basic Principles/Hello-World-An-Introduction-to-UniDi",
+  "id": "UniDi API - Basic Principles/Hello-World-An-Introduction-to-UniDi",
+  "isDocsHomePage": false,
+  "title": "UniDi API - an introduction",
+  "description": "An introduction to UniDi's API",
+  "source": "@site/docs/02-UniDi API - Basic Principles/02-HelloWorld.md",
+  "sourceDirName": "02-UniDi API - Basic Principles",
+  "slug": "/UniDi API - Basic Principles/Hello-World-An-Introduction-to-UniDi",
+  "permalink": "/docs/UniDi API - Basic Principles/Hello-World-An-Introduction-to-UniDi",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/02-UniDi API - Basic Principles/02-HelloWorld.md",
+  "version": "current",
+  "sidebar_label": "Hello World!",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "Hello-World-An-Introduction-to-UniDi",
+    "title": "Hello World!",
+    "description": "An introduction to UniDi's API",
+    "sidebar_label": "Hello World!"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Tutorial Intro",
+    "permalink": "/docs/intro"
+  },
+  "next": {
+    "title": "Injection",
+    "permalink": "/docs/UniDi API - Basic Principles/Injection"
+  }
+}

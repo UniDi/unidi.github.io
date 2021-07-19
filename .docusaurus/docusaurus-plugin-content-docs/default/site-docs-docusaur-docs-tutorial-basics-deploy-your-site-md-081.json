@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Docusaur-Docs/tutorial-basics/deploy-your-site",
+  "id": "Docusaur-Docs/tutorial-basics/deploy-your-site",
+  "isDocsHomePage": false,
+  "title": "Deploy your site",
+  "description": "Docusaurus is a static-site-generator (also called Jamstack).",
+  "source": "@site/docs/Docusaur-Docs/tutorial-basics/deploy-your-site.md",
+  "sourceDirName": "Docusaur-Docs/tutorial-basics",
+  "slug": "/Docusaur-Docs/tutorial-basics/deploy-your-site",
+  "permalink": "/docs/Docusaur-Docs/tutorial-basics/deploy-your-site",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/Docusaur-Docs/tutorial-basics/deploy-your-site.md",
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {
+    "sidebar_position": 5
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Markdown Features",
+    "permalink": "/docs/Docusaur-Docs/tutorial-basics/markdown-features"
+  },
+  "next": {
+    "title": "Congratulations!",
+    "permalink": "/docs/Docusaur-Docs/tutorial-basics/congratulations"
+  }
+}

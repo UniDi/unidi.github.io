@@ -1,0 +1,23 @@
+{
+  "unversionedId": "Basic Principles/03.1-Construction-Methods",
+  "id": "Basic Principles/03.1-Construction-Methods",
+  "isDocsHomePage": false,
+  "title": "03.1-Construction-Methods",
+  "description": "Construction Methods",
+  "source": "@site/docs/03-Basic Principles/03.1-Construction-Methods.md",
+  "sourceDirName": "03-Basic Principles",
+  "slug": "/Basic Principles/03.1-Construction-Methods",
+  "permalink": "/docs/Basic Principles/03.1-Construction-Methods",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/03-Basic Principles/03.1-Construction-Methods.md",
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Using Non-MonoBehaviour Classes",
+    "permalink": "/docs/Basic Principles/Using-Non-MonoBehaviours"
+  },
+  "next": {
+    "title": "Create a Page",
+    "permalink": "/docs/Docusaur-Docs/tutorial-basics/create-a-page"
+  }
+}

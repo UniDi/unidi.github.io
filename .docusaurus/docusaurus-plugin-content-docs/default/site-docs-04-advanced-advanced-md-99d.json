@@ -1,0 +1,23 @@
+{
+  "unversionedId": "Advanced/advanced",
+  "id": "Advanced/advanced",
+  "isDocsHomePage": false,
+  "title": "advanced",
+  "description": "`",
+  "source": "@site/docs/04-Advanced/advanced.md",
+  "sourceDirName": "04-Advanced",
+  "slug": "/Advanced/advanced",
+  "permalink": "/docs/Advanced/advanced",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/04-Advanced/advanced.md",
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Injection",
+    "permalink": "/docs/Advanced/Injections"
+  },
+  "next": {
+    "title": "Create a Page",
+    "permalink": "/docs/Docusaur-Docs/tutorial-basics/create-a-page"
+  }
+}

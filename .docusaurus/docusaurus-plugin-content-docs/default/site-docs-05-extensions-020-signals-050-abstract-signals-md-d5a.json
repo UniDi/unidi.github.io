@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Extensions/Signals/Abstract-Signals",
+  "id": "Extensions/Signals/Abstract-Signals",
+  "isDocsHomePage": false,
+  "title": "Abstract-Signals",
+  "description": "Abstract Signals",
+  "source": "@site/docs/05-Extensions/020-Signals/050-Abstract-Signals.md",
+  "sourceDirName": "05-Extensions/020-Signals",
+  "slug": "/Extensions/Signals/Abstract-Signals",
+  "permalink": "/docs/Extensions/Signals/Abstract-Signals",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/05-Extensions/020-Signals/050-Abstract-Signals.md",
+  "version": "current",
+  "sidebarPosition": 50,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Signal-Binding",
+    "permalink": "/docs/Extensions/Signals/Signal-Binding"
+  },
+  "next": {
+    "title": "Signals-With-Subcontainers",
+    "permalink": "/docs/Extensions/Signals/Signals-With-Subcontainers"
+  }
+}

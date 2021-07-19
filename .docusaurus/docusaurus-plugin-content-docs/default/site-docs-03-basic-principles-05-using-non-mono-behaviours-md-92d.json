@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Basic Principles/Using-Non-MonoBehaviours",
+  "id": "Basic Principles/Using-Non-MonoBehaviours",
+  "isDocsHomePage": false,
+  "title": "Using Non-MonoBehaviour Classes",
+  "description": "ITickable",
+  "source": "@site/docs/03-Basic Principles/05-Using-Non-MonoBehaviours.md",
+  "sourceDirName": "03-Basic Principles",
+  "slug": "/Basic Principles/Using-Non-MonoBehaviours",
+  "permalink": "/docs/Basic Principles/Using-Non-MonoBehaviours",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/03-Basic Principles/05-Using-Non-MonoBehaviours.md",
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Installers",
+    "permalink": "/docs/Basic Principles/Installers"
+  },
+  "next": {
+    "title": "Create a Page",
+    "permalink": "/docs/Docusaur-Docs/tutorial-basics/create-a-page"
+  }
+}

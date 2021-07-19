@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Advanced/UniDi-Factories",
+  "id": "Advanced/UniDi-Factories",
+  "isDocsHomePage": false,
+  "title": "UniDi-Factories",
+  "description": "Dynamically Creating Objects with Factories",
+  "source": "@site/docs/04-Advanced/06-UniDi-Factories.md",
+  "sourceDirName": "04-Advanced",
+  "slug": "/Advanced/UniDi-Factories",
+  "permalink": "/docs/Advanced/UniDi-Factories",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/04-Advanced/06-UniDi-Factories.md",
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "General Guidelines",
+    "permalink": "/docs/Basic Principles/General-Guidelines-Tips-And-Tricks"
+  },
+  "next": {
+    "title": "Binding",
+    "permalink": "/docs/Advanced/Bindings"
+  }
+}

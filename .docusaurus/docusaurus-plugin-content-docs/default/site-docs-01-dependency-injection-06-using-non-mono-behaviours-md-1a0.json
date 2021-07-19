@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Dependency Injection/Using-Non-MonoBehaviours",
+  "id": "Dependency Injection/Using-Non-MonoBehaviours",
+  "isDocsHomePage": false,
+  "title": "Using Non-MonoBehaviour Classes",
+  "description": "ITickable",
+  "source": "@site/docs/01-Dependency Injection/06-Using-Non-MonoBehaviours.md",
+  "sourceDirName": "01-Dependency Injection",
+  "slug": "/Dependency Injection/Using-Non-MonoBehaviours",
+  "permalink": "/docs/Dependency Injection/Using-Non-MonoBehaviours",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/01-Dependency Injection/06-Using-Non-MonoBehaviours.md",
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "UniDi API - an introduction",
+    "permalink": "/docs/Dependency Injection/Hello-World-An-Introduction-to-UniDi"
+  },
+  "next": {
+    "title": "Tutorial Intro",
+    "permalink": "/docs/intro"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Advanced/Installers/Composite-Installer",
+  "id": "Advanced/Installers/Composite-Installer",
+  "isDocsHomePage": false,
+  "title": "Composite-Installer",
+  "description": "Introduction",
+  "source": "@site/docs/04-Advanced/030-Installers/02-Composite-Installer.md",
+  "sourceDirName": "04-Advanced/030-Installers",
+  "slug": "/Advanced/Installers/Composite-Installer",
+  "permalink": "/docs/Advanced/Installers/Composite-Installer",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/04-Advanced/030-Installers/02-Composite-Installer.md",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "ScriptableObject Installer",
+    "permalink": "/docs/Advanced/Installers/ScriptableObject-Installers"
+  },
+  "next": {
+    "title": "Runtime-Parameters-For-Installers",
+    "permalink": "/docs/Advanced/Installers/Runtime-Parameters-For-Installers"
+  }
+}

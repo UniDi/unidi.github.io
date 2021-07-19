@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Extensions/Auto-Mocking/Using-NSubstitute",
+  "id": "Extensions/Auto-Mocking/Using-NSubstitute",
+  "isDocsHomePage": false,
+  "title": "Using-NSubstitute",
+  "description": "Using NSubstitute",
+  "source": "@site/docs/05-Extensions/010-Auto-Mocking/030-Using-NSubstitute.md",
+  "sourceDirName": "05-Extensions/010-Auto-Mocking",
+  "slug": "/Extensions/Auto-Mocking/Using-NSubstitute",
+  "permalink": "/docs/Extensions/Auto-Mocking/Using-NSubstitute",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/05-Extensions/010-Auto-Mocking/030-Using-NSubstitute.md",
+  "version": "current",
+  "sidebarPosition": 30,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Using-Moq",
+    "permalink": "/docs/Extensions/Auto-Mocking/Using-Moq"
+  },
+  "next": {
+    "title": "Introduction",
+    "permalink": "/docs/Extensions/Signals/Introduction"
+  }
+}

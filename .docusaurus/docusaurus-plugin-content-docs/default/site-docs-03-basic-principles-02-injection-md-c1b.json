@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Basic Principles/Injection",
+  "id": "Basic Principles/Injection",
+  "isDocsHomePage": false,
+  "title": "Injection",
+  "description": "",
+  "source": "@site/docs/03-Basic Principles/02-Injection.md",
+  "sourceDirName": "03-Basic Principles",
+  "slug": "/Basic Principles/Injection",
+  "permalink": "/docs/Basic Principles/Injection",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/03-Basic Principles/02-Injection.md",
+  "version": "current",
+  "sidebarPosition": 2,
+  "frontMatter": {
+    "id": "Injection",
+    "description": ""
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Hello World! Example",
+    "permalink": "/docs/Get Started/Hello-World"
+  },
+  "next": {
+    "title": "Binding",
+    "permalink": "/docs/Basic Principles/Binding"
+  }
+}

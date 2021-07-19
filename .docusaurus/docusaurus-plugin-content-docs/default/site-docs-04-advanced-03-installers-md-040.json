@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Advanced/Installers",
+  "id": "Advanced/Installers",
+  "isDocsHomePage": false,
+  "title": "Installers",
+  "description": "ScriptableObject Installer",
+  "source": "@site/docs/04-Advanced/03-Installers.md",
+  "sourceDirName": "04-Advanced",
+  "slug": "/Advanced/Installers",
+  "permalink": "/docs/Advanced/Installers",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/04-Advanced/03-Installers.md",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Injection",
+    "permalink": "/docs/Advanced/Injections"
+  },
+  "next": {
+    "title": "Create a Page",
+    "permalink": "/docs/Docusaur-Docs/tutorial-basics/create-a-page"
+  }
+}

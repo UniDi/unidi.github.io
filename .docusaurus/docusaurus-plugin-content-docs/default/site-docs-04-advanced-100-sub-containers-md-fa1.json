@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Advanced/Sub-Containers",
+  "id": "Advanced/Sub-Containers",
+  "isDocsHomePage": false,
+  "title": "Sub-Containers",
+  "description": "Introduction",
+  "source": "@site/docs/04-Advanced/100-Sub-Containers.md",
+  "sourceDirName": "04-Advanced",
+  "slug": "/Advanced/Sub-Containers",
+  "permalink": "/docs/Advanced/Sub-Containers",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/04-Advanced/100-Sub-Containers.md",
+  "version": "current",
+  "sidebarPosition": 100,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Writing Automated Tests",
+    "permalink": "/docs/Advanced/UniDi-Test-Framework"
+  },
+  "next": {
+    "title": "Mocking-Introduction",
+    "permalink": "/docs/Extensions/Auto-Mocking/Mocking-Introduction"
+  }
+}

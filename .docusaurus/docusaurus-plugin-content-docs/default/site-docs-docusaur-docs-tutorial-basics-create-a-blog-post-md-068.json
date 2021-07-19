@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Docusaur-Docs/tutorial-basics/create-a-blog-post",
+  "id": "Docusaur-Docs/tutorial-basics/create-a-blog-post",
+  "isDocsHomePage": false,
+  "title": "Create a Blog Post",
+  "description": "Docusaurus creates a page for each blog post, but also a blog index page, a tag system, an RSS feed...",
+  "source": "@site/docs/Docusaur-Docs/tutorial-basics/create-a-blog-post.md",
+  "sourceDirName": "Docusaur-Docs/tutorial-basics",
+  "slug": "/Docusaur-Docs/tutorial-basics/create-a-blog-post",
+  "permalink": "/docs/Docusaur-Docs/tutorial-basics/create-a-blog-post",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/Docusaur-Docs/tutorial-basics/create-a-blog-post.md",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {
+    "sidebar_position": 3
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Create a Document",
+    "permalink": "/docs/Docusaur-Docs/tutorial-basics/create-a-document"
+  },
+  "next": {
+    "title": "Markdown Features",
+    "permalink": "/docs/Docusaur-Docs/tutorial-basics/markdown-features"
+  }
+}

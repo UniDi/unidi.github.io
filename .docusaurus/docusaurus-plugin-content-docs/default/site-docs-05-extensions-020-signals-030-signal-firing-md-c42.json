@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Extensions/Signals/Signal-Firing",
+  "id": "Extensions/Signals/Signal-Firing",
+  "isDocsHomePage": false,
+  "title": "Signal-Firing",
+  "description": "Signal Firing",
+  "source": "@site/docs/05-Extensions/020-Signals/030-Signal-Firing.md",
+  "sourceDirName": "05-Extensions/020-Signals",
+  "slug": "/Extensions/Signals/Signal-Firing",
+  "permalink": "/docs/Extensions/Signals/Signal-Firing",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/05-Extensions/020-Signals/030-Signal-Firing.md",
+  "version": "current",
+  "sidebarPosition": 30,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Signal-Declaration",
+    "permalink": "/docs/Extensions/Signals/Signal-Declaration"
+  },
+  "next": {
+    "title": "Signal-Binding",
+    "permalink": "/docs/Extensions/Signals/Signal-Binding"
+  }
+}

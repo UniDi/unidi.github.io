@@ -1,0 +1,24 @@
+{
+  "unversionedId": "CheatSheet",
+  "id": "CheatSheet",
+  "isDocsHomePage": false,
+  "title": "CheatSheet",
+  "description": "Installers Cheat-Sheet",
+  "source": "@site/docs/200-CheatSheet.md",
+  "sourceDirName": ".",
+  "slug": "/CheatSheet",
+  "permalink": "/docs/CheatSheet",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/200-CheatSheet.md",
+  "version": "current",
+  "sidebarPosition": 200,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Signals-Settings",
+    "permalink": "/docs/Extensions/Signals/Signals-Settings"
+  },
+  "next": {
+    "title": "Create a Page",
+    "permalink": "/docs/Docusaur-Docs/tutorial-basics/create-a-page"
+  }
+}

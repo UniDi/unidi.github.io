@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Dependency Injection/Registering",
+  "id": "Dependency Injection/Registering",
+  "isDocsHomePage": false,
+  "title": "Register Mappings to the DI Container",
+  "description": "The core of a dependency injection framework is the DI container. In it's simplest form it's an object which contains a dictionary that holds all the registrations.",
+  "source": "@site/docs/01-Dependency Injection/04-Registering.md",
+  "sourceDirName": "01-Dependency Injection",
+  "slug": "/Dependency Injection/Registering",
+  "permalink": "/docs/Dependency Injection/Registering",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/01-Dependency Injection/04-Registering.md",
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "UniDi API - an introduction",
+    "permalink": "/docs/Dependency Injection/Hello-World-An-Introduction-to-UniDi"
+  },
+  "next": {
+    "title": "Installers",
+    "permalink": "/docs/Dependency Injection/Installers"
+  }
+}

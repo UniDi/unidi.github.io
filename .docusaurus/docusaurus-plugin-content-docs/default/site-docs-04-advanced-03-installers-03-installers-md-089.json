@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Advanced/Installers/Installers",
+  "id": "Advanced/Installers/Installers",
+  "isDocsHomePage": false,
+  "title": "Installers",
+  "description": "ScriptableObject Installer",
+  "source": "@site/docs/04-Advanced/03-Installers/03-Installers.md",
+  "sourceDirName": "04-Advanced/03-Installers",
+  "slug": "/Advanced/Installers/Installers",
+  "permalink": "/docs/Advanced/Installers/Installers",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/04-Advanced/03-Installers/03-Installers.md",
+  "version": "current",
+  "sidebarPosition": 3,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Composite-Installer",
+    "permalink": "/docs/Advanced/Installers/Composite-Installer"
+  },
+  "next": {
+    "title": "Runtime-Parameters-For-Installers",
+    "permalink": "/docs/Advanced/Installers/Runtime-Parameters-For-Installers"
+  }
+}

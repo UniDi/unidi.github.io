@@ -1,0 +1,23 @@
+{
+  "unversionedId": "Dependency Injection/HelloWorld",
+  "id": "Dependency Injection/HelloWorld",
+  "isDocsHomePage": false,
+  "title": "UniDi API - an introduction to",
+  "description": "Hello, World! Example",
+  "source": "@site/docs/01-Dependency Injection/HelloWorld.md",
+  "sourceDirName": "01-Dependency Injection",
+  "slug": "/Dependency Injection/HelloWorld",
+  "permalink": "/docs/Dependency Injection/HelloWorld",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/01-Dependency Injection/HelloWorld.md",
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Introduction",
+    "permalink": "/docs/Dependency Injection/Introduction"
+  },
+  "next": {
+    "title": "Tutorial Intro",
+    "permalink": "/docs/intro"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "unversionedId": "Basic Principles/Construction Methods",
+  "id": "Basic Principles/Construction Methods",
+  "isDocsHomePage": false,
+  "title": "Construction Methods",
+  "description": "When you bind a dependency you can specify how the instance should be constructed and retrieved.",
+  "source": "@site/docs/03-Basic Principles/04-Construction-Methods.md",
+  "sourceDirName": "03-Basic Principles",
+  "slug": "/Basic Principles/Construction Methods",
+  "permalink": "/docs/Basic Principles/Construction Methods",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/03-Basic Principles/04-Construction-Methods.md",
+  "version": "current",
+  "sidebarPosition": 4,
+  "frontMatter": {
+    "id": "Construction Methods"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Binding",
+    "permalink": "/docs/Basic Principles/Binding"
+  },
+  "next": {
+    "title": "Installers",
+    "permalink": "/docs/Basic Principles/Installers"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Basic Principles/Bind-MonoBehaviours-In-Scene",
+  "id": "Basic Principles/Bind-MonoBehaviours-In-Scene",
+  "isDocsHomePage": false,
+  "title": "Bind MonoBehaviours In The Scene",
+  "description": "In many cases, you have a number of MonoBehaviours that have been added to the scene within the Unity editor (ie. at editor time not runtime) and you want to also have these MonoBehaviours added to the UniDi Container so that they can be injected into other classes.",
+  "source": "@site/docs/03-Basic Principles/08-Bind-MonoBehaviours-In-Scene.md",
+  "sourceDirName": "03-Basic Principles",
+  "slug": "/Basic Principles/Bind-MonoBehaviours-In-Scene",
+  "permalink": "/docs/Basic Principles/Bind-MonoBehaviours-In-Scene",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/03-Basic Principles/08-Bind-MonoBehaviours-In-Scene.md",
+  "version": "current",
+  "sidebarPosition": 8,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Object Graph Validation",
+    "permalink": "/docs/Basic Principles/Object-Graph-Validation"
+  },
+  "next": {
+    "title": "General Guidelines",
+    "permalink": "/docs/Basic Principles/General-Guidelines-Tips-And-Tricks"
+  }
+}

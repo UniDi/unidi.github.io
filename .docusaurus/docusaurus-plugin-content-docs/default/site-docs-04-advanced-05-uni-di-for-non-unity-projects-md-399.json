@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Advanced/UniDi-For-Non-Unity-projects",
+  "id": "Advanced/UniDi-For-Non-Unity-projects",
+  "isDocsHomePage": false,
+  "title": "UniDi-For-Non-Unity-projects",
+  "description": "Using UniDi Outside Unity Or For DLLs",
+  "source": "@site/docs/04-Advanced/05-UniDi-For-Non-Unity-projects.md",
+  "sourceDirName": "04-Advanced",
+  "slug": "/Advanced/UniDi-For-Non-Unity-projects",
+  "permalink": "/docs/Advanced/UniDi-For-Non-Unity-projects",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/04-Advanced/05-UniDi-For-Non-Unity-projects.md",
+  "version": "current",
+  "sidebarPosition": 5,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Runtime-Parameters-For-Installers",
+    "permalink": "/docs/Advanced/Installers/Runtime-Parameters-For-Installers"
+  },
+  "next": {
+    "title": "Create a Page",
+    "permalink": "/docs/Docusaur-Docs/tutorial-basics/create-a-page"
+  }
+}

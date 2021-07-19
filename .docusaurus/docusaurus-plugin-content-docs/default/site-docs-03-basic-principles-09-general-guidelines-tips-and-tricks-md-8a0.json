@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Basic Principles/General-Guidelines-Tips-And-Tricks",
+  "id": "Basic Principles/General-Guidelines-Tips-And-Tricks",
+  "isDocsHomePage": false,
+  "title": "General Guidelines",
+  "description": "* Recommendations / Gotchas / Tips and Tricks *",
+  "source": "@site/docs/03-Basic Principles/09-General-Guidelines-Tips-And-Tricks.md",
+  "sourceDirName": "03-Basic Principles",
+  "slug": "/Basic Principles/General-Guidelines-Tips-And-Tricks",
+  "permalink": "/docs/Basic Principles/General-Guidelines-Tips-And-Tricks",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/03-Basic Principles/09-General-Guidelines-Tips-And-Tricks.md",
+  "version": "current",
+  "sidebarPosition": 9,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Bind MonoBehaviours In The Scene",
+    "permalink": "/docs/Basic Principles/Bind-MonoBehaviours-In-Scene"
+  },
+  "next": {
+    "title": "Binding",
+    "permalink": "/docs/Advanced/Bindings"
+  }
+}

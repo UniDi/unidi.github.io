@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Advanced/UniDi-Test-Framework",
+  "id": "Advanced/UniDi-Test-Framework",
+  "isDocsHomePage": false,
+  "title": "Writing Automated Tests",
+  "description": "Writing Automated Unit Tests and Integration Tests",
+  "source": "@site/docs/04-Advanced/090-UniDi-Test-Framework.md",
+  "sourceDirName": "04-Advanced",
+  "slug": "/Advanced/UniDi-Test-Framework",
+  "permalink": "/docs/Advanced/UniDi-Test-Framework",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/04-Advanced/090-UniDi-Test-Framework.md",
+  "version": "current",
+  "sidebarPosition": 90,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Decorator-Bindings",
+    "permalink": "/docs/Advanced/Decorator-Bindings"
+  },
+  "next": {
+    "title": "Sub-Containers",
+    "permalink": "/docs/Advanced/Sub-Containers"
+  }
+}

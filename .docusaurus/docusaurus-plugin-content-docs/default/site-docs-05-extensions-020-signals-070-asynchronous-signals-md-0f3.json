@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Extensions/Signals/Asynchronous-Signals",
+  "id": "Extensions/Signals/Asynchronous-Signals",
+  "isDocsHomePage": false,
+  "title": "Asynchronous-Signals",
+  "description": "Asynchronous Signals",
+  "source": "@site/docs/05-Extensions/020-Signals/070-Asynchronous-Signals.md",
+  "sourceDirName": "05-Extensions/020-Signals",
+  "slug": "/Extensions/Signals/Asynchronous-Signals",
+  "permalink": "/docs/Extensions/Signals/Asynchronous-Signals",
+  "editUrl": "https://github.com/UniDi/unidi.github.io/edit/master/website/docs/05-Extensions/020-Signals/070-Asynchronous-Signals.md",
+  "version": "current",
+  "sidebarPosition": 70,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Signals-With-Subcontainers",
+    "permalink": "/docs/Extensions/Signals/Signals-With-Subcontainers"
+  },
+  "next": {
+    "title": "Signals-Settings",
+    "permalink": "/docs/Extensions/Signals/Signals-Settings"
+  }
+}

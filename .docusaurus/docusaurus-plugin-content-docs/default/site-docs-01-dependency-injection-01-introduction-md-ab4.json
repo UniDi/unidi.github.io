@@ -1,0 +1,23 @@
+{
+  "unversionedId": "Dependency Injection/Introduction",
+  "id": "Dependency Injection/Introduction",
+  "isDocsHomePage": false,
+  "title": "Introduction",
+  "description": "An Introcuction to dependency injection",
+  "source": "@site/docs/01-Dependency Injection/01-Introduction.md",
+  "sourceDirName": "01-Dependency Injection",
+  "slug": "/Dependency Injection/Introduction",
+  "permalink": "/docs/Dependency Injection/Introduction",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/01-Dependency Injection/01-Introduction.md",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Introduction",
+    "description": "An Introcuction to dependency injection"
+  },
+  "sidebar": "tutorialSidebar",
+  "next": {
+    "title": "Tutorial Intro",
+    "permalink": "/docs/intro"
+  }
+}

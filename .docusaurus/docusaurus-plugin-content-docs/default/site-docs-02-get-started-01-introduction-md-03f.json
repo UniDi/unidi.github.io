@@ -1,0 +1,27 @@
+{
+  "unversionedId": "Get-Started/Introduction",
+  "id": "Get-Started/Introduction",
+  "isDocsHomePage": false,
+  "title": "Introduction",
+  "description": "An Introcuction to dependency injection",
+  "source": "@site/docs/02-Get-Started/01-Introduction.md",
+  "sourceDirName": "02-Get-Started",
+  "slug": "/Get-Started/Introduction",
+  "permalink": "/docs/Get-Started/Introduction",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/02-Get-Started/01-Introduction.md",
+  "version": "current",
+  "sidebarPosition": 1,
+  "frontMatter": {
+    "title": "Introduction",
+    "description": "An Introcuction to dependency injection"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "UniDi Documentation",
+    "permalink": "/docs/intro"
+  },
+  "next": {
+    "title": "UniDi API - an introduction",
+    "permalink": "/docs/Get-Started/Hello-World-An-Introduction-to-UniDi"
+  }
+}

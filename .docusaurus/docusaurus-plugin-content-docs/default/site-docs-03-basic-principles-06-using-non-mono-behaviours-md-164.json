@@ -1,0 +1,24 @@
+{
+  "unversionedId": "Basic Principles/Using-Non-MonoBehaviours",
+  "id": "Basic Principles/Using-Non-MonoBehaviours",
+  "isDocsHomePage": false,
+  "title": "Using Non-MonoBehaviour Classes",
+  "description": "ITickable",
+  "source": "@site/docs/03-Basic Principles/06-Using-Non-MonoBehaviours.md",
+  "sourceDirName": "03-Basic Principles",
+  "slug": "/Basic Principles/Using-Non-MonoBehaviours",
+  "permalink": "/docs/Basic Principles/Using-Non-MonoBehaviours",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/03-Basic Principles/06-Using-Non-MonoBehaviours.md",
+  "version": "current",
+  "sidebarPosition": 6,
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Using Non-MonoBehaviour Classes",
+    "permalink": "/docs/Basic Principles/Using-Non-MonoBehaviour-Classes"
+  },
+  "next": {
+    "title": "Object Graph Validation",
+    "permalink": "/docs/Basic Principles/Object-Graph-Validation"
+  }
+}
