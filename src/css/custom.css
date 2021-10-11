@@ -6,6 +6,11 @@
  */
 
 /* You can override the default Infima variables here. */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Source+Sans+Pro:wght@300;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=IBM+Plex+Sans');
+
+
 :root {
  --ifm-color-white: #f8f5d7;
   --ifm-color-black: #282828;
@@ -71,7 +76,33 @@
 		/* --ifm-font-color-base-inverse: */
 		/* --ifm-font-color-secondary: */ 
 		/* --ifm-font-family-base */
-		/* --ifm-font-family-monospace */
+	 	/* --ifm-font-family-monospace */
+
+/* -- ADD: */
+    --ifm-navbar-link-hover-color: var(--ifm-color-primary);
+    --ifm-background-color: #fafafa;
+    --ifm-code-font-size: 95%;
+    --ifm-navbar-link-color: #000;
+    --ifm-font-family-base: 'IBM Plex Sans', PT Sans, Montserrat, Lato, sans-serif;
+/* --ifm-font-family-base: 'Verdana', PT Sans, Montserrat, Lato; */
+    --ifm-font-family-monospace: 'IBM Plex Mono', PT Sans, Open Sans, Roboto Slab, Roboto Condensed, monospace;
+/* --ifm-font-family-monospace: 'Lucida Console', Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace; */
+/* --ifm-font-family-monospace: 'Menlo', sans-serif; */ 
+/* --ifm-font-family-monospace: 'Source Code Pro', sans-serif; */ 
+    --ifm-button-padding-horizontal: 0.55rem;
+    --ifm-button-padding-vertical: .7rem;
+    --ifm-menu-color: #000;
+    --ifm-menu-color-background-active: transparent;
+    --ifm-toc-link-color: #000;
+    --ifm-table-border-color: #efefef;
+    --ifm-navbar-height: 85px;
+    --ifm-button-border-width: 0;
+
+    --wdio-spacing-vertical: 60px;
+    --wdio-link-background-color: #eee0d7;
+    --wdio-link-color: #000;
+    --wdio-section-background-color: #fff;
+
 }
 
 html[data-theme='dark'] {

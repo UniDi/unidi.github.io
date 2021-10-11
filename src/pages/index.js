@@ -146,7 +146,10 @@ export default function Home() {
 	  text={
 		  <>
 		  <p>
-		  Lorum ipsum
+		  UniDi is a DI Container, a software library that provides DI functionality. It automates many of the tasks involved in <strong>Object Composition, Interception, and Lifetime Management</strong>. DI Containers are also known as inversion of controL (IoC) containers. 
+		  </p>
+		  <p>
+		  UniDi is a fully functional DI Container. It supports Lifetime Management, Interception, Auto-registration, and detects Circular Dependencies. UniDi communicates configuration mistakes. The core framework is extensible and has some great extensions available. And a comprehensive documentation.
 		  </p>
 		  </>
 	  }
@@ -156,10 +159,29 @@ export default function Home() {
                   <CodeBlock className="csharp" children={ReactIntegration}></CodeBlock>
 	  }
 	  reversed
-	  title="Let UniDi glue.."
+	  title="Sine Qua Non"
 	  text={
 		  <>
-		  Lorum ipsum
+		  Don't expect a DI Container to magically change tightly coupled code into loosely coupled code by itself. A DI Container can make your composition root more maintainable, but for an application to become maintainable, it must first be designed with DI patterns and techniques in mind. Using a DI Container neither guarantees nor necessitates the correct usage of DI.<br/><br/>
+
+		<b>Devs should have full understanding of the following concepts:</b>
+		  <ul>
+			<li> <b>DIP</b><br/>
+				How to practice the <strong>Dependency Injection Patterns</strong> in Pure DI.
+		  	</li>
+			<li> <b>LSP</b><br/>
+				The SOLID principles and specificaly: the <b>Liskov Substitute Pattern</b>.
+		  	</li> 		  	
+		  </ul>
+		<b>Additional and recommended knowledge:</b>
+		  <ul>
+		  	<li><b>Recognize DI smells and DI anti-patterns</b>
+		  		<i>(like: Service Locator and Control Freak.)</i>
+		  	</li>
+		  	<li><b>IoC</b><br/>
+				Inversion of Control, what the term means, and its relation with the DIP. 
+		  </li>
+		  </ul>
 		  </>
 	  }
 	/>
