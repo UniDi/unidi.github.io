@@ -20,7 +20,7 @@ Where:
 
 - **ConstructionMethod** - When binding to an instance method above, you also need to define where this instance comes from.  See the section on Handler below for more detail
 
-* (**Copy**|**Move**)Into(**All**|**Direct**)SubContainers = Same behaviour as described in <a href="../README.md#binding">main section on binding</a>.
+* (**Copy**|**Move**)Into(**All**|**Direct**)SubContainers = Same behaviour as described in [main section on binding](../../Basic%20Principles/Binding).
 
 - **Handler** - The method that should be triggered when the signal fires.  This has several variations:
 

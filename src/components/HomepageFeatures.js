@@ -4,32 +4,29 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Keep your code maintainable',
     Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        UniDi makes sure your classes and Game Objects are there when you want them, where you want them, and how you want them initialized.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Keep your code flexible',
     Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Loose coupling makes adding new features and modifying old ones is a breeze.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Keep your code testable',
     Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        UniDi manages your dependencies for you, so your classes can be small simple, and easy to reason about.
       </>
     ),
   },

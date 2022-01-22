@@ -93,7 +93,7 @@ Container.BindInstance(1);
 ![HR](/img/hr.svg)
 ## Auto Injecter Component
 
-The sections [Instantiating GameObjects at Runtime](../Basic%20Principles/General-Guidelines-Tips-And-Tricks#instantiate-gameobjects-at-runtime) and [UniDi Factories](TODO) explains that any dynamically instantiated object needs to be created through the DI framework in order to be injected.  
+The sections [Instantiating GameObjects at Runtime](../Basic%20Principles/General-Guidelines-Tips-And-Tricks#instantiate-gameobjects-at-runtime) and [UniDi Factories](#TODO) explains that any dynamically instantiated object needs to be created through the DI framework in order to be injected.  
 You cannot simply execute `GameObject.Instantiate(prefab)`, or call `new Foo()`.
 
 Though this is the standard behavior/best practice for dependency injection, it can be problematic when using certain third party Unity assets/libraries.  

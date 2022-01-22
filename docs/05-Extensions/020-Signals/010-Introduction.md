@@ -162,7 +162,7 @@ public class MatchNotifier : IInitializable, IDisposable
 }
 ```
 
-Note that if you go this route that you need to enable UniRx integration as described TODO: <a href="../README.md#unirx-integration">here</a>.
+Note that if you go this route that you need to enable UniRx integration as described [here](#TODO).
 
 As you can see in the the above examples, you can either directly bind a handler method to a signal in an installer using `BindSignal` (first example) or you can have your signal handler attach and detach itself to the signal (second and third examples)
 

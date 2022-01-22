@@ -57,4 +57,4 @@ Then you can implement the fields of the IGameServer interface and configure the
 
 To avoid writing all the mocking classes, like the above MockGameServer class example. UniDi allows you to automate this process by using a mocking library which does all the work for you. UniDi supports *Moq* and *NSubstitute*. Both are most used in the field but have some different approaches to mocking. And will be handled differently in this document.
 
-Note that by default, Auto-mocking is not enabled in UniDi.  If you wish to use the auto-mocking feature then you need to install [UniDi/AutoMoq](TODO) or [UniDi/AutoSubstitute](TODO). 
+Note that by default, Auto-mocking is not enabled in UniDi.  If you wish to use the auto-mocking feature then you need to install [UniDi/AutoMoq](#TODO) or [UniDi/AutoSubstitute](#TODO). 

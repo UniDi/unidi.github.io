@@ -1,17 +1,12 @@
 # [UniDi Website and documentation](https://unidi.github.io/)
 
-
-This repo contains the website configuration and documentation powering the [React Native website](https://reactnative.dev/).
-
-If you are looking for the source code of the [React Native Archive website](https://archive.reactnative.dev/) select the [`archive`](https://github.com/facebook/react-native-website/tree/archive) branch.
-
 ## Contents
 
-- [Getting started](#%EF%B8%8F-getting-started)
-- [Overview](#-overview)
-- [Website configuration](#-website-configuration)
-- [Contributing](#-contributing)
-- [License](#-license)
+- [Getting started](#getting-started)
+- [Overview](#overview)
+- [Website configuration](#website-configuration)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Getting started
 
@@ -52,13 +47,12 @@ unidi.github.io
 |   |-- 04-Advanced
 |   |-- 05-Extensions
 |   |-- 200-CheatSheet.md
-|   |-- Docusaur-Docs
-|   `-- intro.md
+|   `-- index.md
 ```
 
 ### Documentation sources
 
-As mentioned above, the `docs` folder contains the source files for all of the docs in the React Native website. In most cases, you will want to edit the files within this directory. If you're adding a new doc or you need to alter the order the docs appear in the sidebar, take a look at the `sidebars.json` file in the `website` directory. The sidebars file contains a list of document ids that should match those defined in the header metadata (aka frontmatter) of the docs markdown files.
+As mentioned above, the `docs` folder contains the source files for all of the docs in the website. In most cases, you will want to edit the files within this directory. If you're adding a new doc or you need to alter the order the docs appear in the sidebar, take a look at the `sidebars.json` file in the `website` directory. The sidebars file contains a list of document ids that should match those defined in the header metadata (aka frontmatter) of the docs markdown files.
 
 ## Website configuration
 
@@ -69,8 +63,6 @@ The `core` subdirectory contains JavaScript and React components that are the co
 The `src/pages` subdirectory contains the React components that make up the non-documentation pages of the site, such as the homepage.
 
 The `src/theme` subdirectory contains the swizzled React components from the Docusaurus theme.
-
-The `showcase.json` file contains the list of users that are highlighted in the React Native showcase.
 
 ## Contributing
 

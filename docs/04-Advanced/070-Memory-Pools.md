@@ -1,6 +1,6 @@
 ## Example
 
-Before understanding memory pools it would be helpful to understand factories, so please read  TODO:<a href="Factories.md">the introduction to factories</a> first.
+Before understanding memory pools it would be helpful to understand factories, so please read [the introduction to factories](UniDi-Factories) first.
 
 It doesn't take long when developing games in Unity before you realize that proper memory management is very important if you want your game to run smoothly (especially on mobile).  Depending on the constraints of the platform and the type of game you are working on, it might be very important to avoid unnecessary heap allocations as much as possible.  One very effective way to do this is to use memory pools.
 
@@ -175,7 +175,7 @@ Where:
 
 * **Scope** = Note that unlike for normal bindings, the default is AsCached instead of AsTransient, which is almost always what you want, so in most cases you can leave this unspecified.  It is only in some rare cases where you need to have unique pools for each class that uses the pool.
 
-The rest of the bind methods behave the same as the normal bind methods documented <a href="../README.md#binding">here</a>
+The rest of the bind methods behave the same as the normal bind methods documented [here](../Basic%20Principles/Binding)
 
 ## Resetting Items In Pool
 
@@ -1034,7 +1034,7 @@ public class Foo : IPoolable<string>
 
 ## Abstract Memory Pools
 
-Just like TODO: <a href="Factories.md#abstract-factories">abstract factories</a>, sometimes you might want to create a memory pool that returns an interface, with the concrete type decided inside an installer.  This works very similarly to abstract factories.  For example:
+Just like [abstract factories](UniDi-Factories#abstract-factories), sometimes you might want to create a memory pool that returns an interface, with the concrete type decided inside an installer.  This works very similarly to abstract factories.  For example:
 
 ```csharp
 public interface IFoo
