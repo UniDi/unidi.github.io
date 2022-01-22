@@ -195,7 +195,7 @@ TODO: add sreenshot <!-- <img src="Images/ShipFacadeExample1.png?raw=true" alt="
 * The idea here is that everything at or underneath the Ship game object should be considered inside it's own sub-container.  When we're done, we should be able to add multiple ships to our scene, each with their own components ShipHealthHandler, ShipInputHandler, etc. that can treat each other as singletons.
 * Try to validate your scene by pressing `CTRL+ALT+V`.  You should get an error that looks like this: `Unable to resolve type 'ShipHealthHandler' while building object with type 'Ship'.`
 * This is because the ShipHealthHandler component has not been added to our sub-container.  To address this:
-    * Click on the HealthHandler game object and then click Add Component and type UniDi Binding (see TODO: <a href="../README.md#scene-bindings">here</a> for details on this feature)
+    * Click on the HealthHandler game object and then click Add Component and type UniDi Binding (see [here](../Basic%20Principles/Bind-MonoBehaviours-In-Scene) for details on this feature)
     * Drag the Ship Health Handler Component to the Components field of UniDi Binding
 * Validate again by pressing `CTRL+ALT+V`.  You should now get this error instead: `Unable to resolve type 'Ship' while building object with type 'GameRunner'.` 
 * Our Ship component also needs to be added to the container.  To address this, once again:
@@ -207,7 +207,7 @@ TODO: add sreenshot <!-- <img src="Images/ShipFacadeExample1.png?raw=true" alt="
 
 Also note that we can add installers to our ship sub-container in the same way that we add installers to our Scene Context - just by dropping them into the Installers property of GameObjectContext.
 
-In this example we used MonoBehaviour's for everything but this is just one of several ways to implement Facades/Subcontainers.  In the TODO: <a href="../README.md#UniDi-philophy">spirit of not enforcing any one way of doing things</a>, we also present TODO: <a href="#using-game-object-contexts-no-monobehaviours">another approach</a> below that doesn't use any MonoBehaviour's at all.
+In this example we used MonoBehaviour's for everything but this is just one of several ways to implement Facades/Subcontainers.  In the [spirit of not enforcing any one way of doing things](#TODO), we also present [another approach](#gameobjectcontext-example-without-monobehaviours) below that doesn't use any MonoBehaviour's at all.
 
 ## Creating Game Object Context's Dynamically
 
