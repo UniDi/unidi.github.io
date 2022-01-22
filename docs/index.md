@@ -1,8 +1,9 @@
 ---
 sidebar_position: 1
+slug: /
 ---
 
-# UniDi
+# Intro
 
 ### A Dependency Injection Framework built for Unity
 Writing games is complicated. Objects need to communicate with the Unity Engine, share data, and notify each other updates. Sometimes adding a small feature to your game may feel like a monumental task. Bring some control to your codebase with UniDi. UniDi helps you use _Dependency Injection_ (DI) to break your code up into a collection of loosely-coupled parts that are maintainable, flexible, and testable.
