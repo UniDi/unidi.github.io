@@ -92,7 +92,7 @@ module.exports = {
                         },
                         {
                             label: 'Discord (Infallible Code #UniDi)',
-                            href: 'https://discord.gg/uJZSDVVV',
+                            href: 'https://discord.gg/NjjQ3BU',
                         },
                     ],
                 },
