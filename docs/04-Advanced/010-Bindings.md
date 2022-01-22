@@ -1,6 +1,6 @@
-# Binding
+# Bindings
 
-[Basic Principles/Binding](../Basic%20Principles/Binding)
+[Binding Basics](../Basic%20Principles/Binding)
 
 <br/> 
 
@@ -225,7 +225,7 @@ Note also that this only occurs once.  If you load another scene from the first 
 
 The reason that all the bindings you add to a global installer are available for any classes within each individual scene, is because the Container in each scene uses the `ProjectContext` Container as it's "parent".  For more information on nested containers see [here](#sub-containers-and-facades).
 
-`ProjectContext` is a very convenient place to put objects that you want to persist across scenes.  However, the fact that it's completely global to every scene can lead to some unintended behaviour.  For example, this means that even if you write a simple test scene that uses UniDi, it will load the `ProjectContext,` which may not be what you want.  To address these problems it is often better to use Scene Parenting instead, since that approach allows you to be selective in terms of which scenes inherit the same common bindings.  See [here](#scene-parenting) for more details on that approach.
+`ProjectContext` is a very convenient place to put objects that you want to persist across scenes.  However, the fact that it's completely global to every scene can lead to some unintended behaviour.  For example, this means that even if you write a simple test scene that uses UniDi, it will load the `ProjectContext,` which may not be what you want.  To address these problems it is often better to use Scene Parenting instead, since that approach allows you to be selective in terms of which scenes inherit the same common bindings.  See [here](#TODO) for more details on that approach.
 
 Note also that by default, any game objects that are instantiated inside ProjectContext will be parented underneath it by default.  If you'd prefer that each newly instantiated object is instead placed at the root of the scene hierarchy (but still marked DontDestroyOnLoad) then you can change this by unchecking the flag 'Parent New Objects Under Context' in the inspector of ProjectContext.
 
@@ -462,4 +462,4 @@ Note that you can chain together any combination of the below conditionals in th
 ![HR](/img/hr.svg)
 ## Decorator Bindings
 
-Decorator Bindings has it's own documentation [here](Documentation/DecoratorBindings.md).
+Decorator Bindings has it's own documentation [here](Decorator-Bindings).

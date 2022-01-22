@@ -56,7 +56,7 @@ public class Enemy
 }
 ```
 
-But now, every place that needs to create a new `Enemy` instance needs to also supply an instance of `Player`, and we are back at the problem mentioned <a href="../README.md#theory">in the main theory section</a>.  So to address this, factories must be used to create every dynamic instance to ensure that these extra dependencies are filled in by UniDi.
+But now, every place that needs to create a new `Enemy` instance needs to also supply an instance of `Player`, and we are back at the problem mentioned [in the main theory section](../Get%20Started/Introduction#theory).  So to address this, factories must be used to create every dynamic instance to ensure that these extra dependencies are filled in by UniDi.
 
 ### Example
 
@@ -197,9 +197,9 @@ public class TestInstaller : MonoInstaller
 }
 ```
 
-And similarly if you want to instantiate your dynamic object via `FromMethod`, `FromNewComponentOnNewGameObject`, `FromInstance`, `FromSubContainerResolve`, etc. (see <a href="../README.md#binding">binding section</a> for full details)
+And similarly if you want to instantiate your dynamic object via `FromMethod`, `FromNewComponentOnNewGameObject`, `FromInstance`, `FromSubContainerResolve`, etc. (see [binding section](../Basic%20Principles/Binding) for full details)
 
-Using `FromSubContainerResolve` can be particularly useful if your dynamically created object has a lot of its own dependencies.  You can have it behave like a "Facade"  (see the <a href="SubContainers.md">subcontainers section</a> for details on nested containers / facades)
+Using `FromSubContainerResolve` can be particularly useful if your dynamically created object has a lot of its own dependencies.  You can have it behave like a "Facade"  (see the [subcontainers section](Sub-Containers) for details on nested containers / facades)
 
 <a id="using-factories-directly"></a>
 There is no requirement that the `Enemy.Factory` class be a nested class within `Enemy,` however we have found this to be a very useful convention.  In both of the above examples we could install it like this instead, and bypass the need for a nested factory class:
@@ -218,7 +218,7 @@ This is why we recommend this convention of using a nested factory class instead
 
 Other things to be aware of:
 
-- Validation can be especially useful for dynamically created objects, because otherwise you may not catch the error until the factory is invoked at some point during runtime  (see the <a href="../README.md#object-graph-validation">validation section</a> for more details on validation)
+- Validation can be especially useful for dynamically created objects, because otherwise you may not catch the error until the factory is invoked at some point during runtime  (see the [validation section](../Basic%20Principles/Object-Graph-Validation) for more details on validation)
 
 - Note that for dynamically instantiated MonoBehaviours (for example when using `FromComponentInNewPrefab` with `BindFactory)` injection should always occur before `Awake` and `Start`, so a common convention we recommend is to use `Awake`/`Start` for initialization logic and use the inject method strictly for saving dependencies (ie. similar to constructors for non-monobehaviours)
 
@@ -250,7 +250,7 @@ Where:
 
 * **Scope** = Note that unlike for non-factory bindings, the default is AsCached instead of AsTransient, which is almost always what you want for factories, so in most cases you can leave this unspecified.
 
-Other bind methods have the same functionality as <a href="../README.md#binding">non factory bindings</a>.
+Other bind methods have the same functionality as [non factory bindings](../Basic%20Principles/Binding).
 
 ### Abstract Factories
 
@@ -327,7 +327,7 @@ public class GameInstaller : MonoInstaller
 
 *Ok, but what if I don't know what type I want to create until after the application has started?  Or what if I have special requirements for constructing instances of the Enemy class that are not covered by any of the construction methods?* 
 
-In these cases you can create what we call a 'custom factory', and then directly call `new Enemy` or use the <a href="../README.md#dicontainer-methods">methods on DiContainer</a>, or use any method you need to create your object.  For example, continuing the previous factory example, let's say that you wanted to be able to change a runtime value (difficulty) that determines what kinds of enemies get created.
+In these cases you can create what we call a 'custom factory', and then directly call `new Enemy` or use the [methods on DiContainer](#TODO), or use any method you need to create your object.  For example, continuing the previous factory example, let's say that you wanted to be able to change a runtime value (difficulty) that determines what kinds of enemies get created.
 
 ```csharp
 public enum Difficulties
@@ -414,7 +414,7 @@ In other words, create a new class that derives from `IFactory<Enemy>` and then 
 
 You could also directly call `new Dog()` and `new Demon()` here instead of using the DiContainer (though in that case `Dog` and `Demon` would not have their members injected).
 
-Note that `FromFactory<CustomEnemyFactory>()` is really shorthand for `FromIFactory(b => b.To<CustomEnemyFactory>().AsCached());` as explained in <a href="../README.md#binding">binding section</a>.  Using `FromIFactory` instead of `FromFactory` is a more powerful way of specifying custom factories because the custom factory can be created using any construction method you want, including `FromSubContainerResolve`, `FromInstance`, `FromComponentInNewPrefab`, etc.
+Note that `FromFactory<CustomEnemyFactory>()` is really shorthand for `FromIFactory(b => b.To<CustomEnemyFactory>().AsCached());` as explained in [binding section](../Basic%20Principles/Binding).  Using `FromIFactory` instead of `FromFactory` is a more powerful way of specifying custom factories because the custom factory can be created using any construction method you want, including `FromSubContainerResolve`, `FromInstance`, `FromComponentInNewPrefab`, etc.
 
 One problem with our `CustomEnemyFactory` above is that it doesn't get validated correctly.  If we add dependencies to the `Demon` or `Dog` classes, and those dependencies are not bound in any installers, then we will not find out until runtime.  So unless we test every difficulty level, it might take some time before becoming aware of this problem.
 
@@ -661,4 +661,4 @@ public class TestInstaller : MonoInstaller
 
 Note that it is not necessary to bind the `IValidatable` interface to our factory.  Simply by implementing the `IValidatable` interface, and also having our factory be part of the object graph, is enough for the `Validate` method to get called.
 
-Within the `Validate` method, to manually validate dynamic object graphs, you simply instantiate them.  Note that this will not actually instantiate these objects (these calls actually return null here).  The point is to do a "dry run" without actually instantiating anything, to prove out the full object graph.  For more details on validation see the <a href="../README.md#object-graph-validation">validation section</a>.
+Within the `Validate` method, to manually validate dynamic object graphs, you simply instantiate them.  Note that this will not actually instantiate these objects (these calls actually return null here).  The point is to do a "dry run" without actually instantiating anything, to prove out the full object graph.  For more details on validation see the [validation section](../Basic%20Principles/Object-Graph-Validation).

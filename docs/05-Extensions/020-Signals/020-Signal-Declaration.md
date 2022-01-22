@@ -89,7 +89,7 @@ These values control whether the signal is fired synchronously or asynchronously
 The tick priority to execute the signal handler methods at.  Note that this is only applicable when using **RunAsync**.
 
 ### (Copy|Move)Into(All|Direct)SubContainers
-Same behaviour as described in TODO: <a href="../README.md#binding">main section on binding</a>.
+Same behaviour as described in [main section on binding](../../Basic%20Principles/Binding).
 
     Note that the default value for **RunSync**/**RunAsync** and **RequireSubscriber**/**OptionalSubscriber** can be overridden by changing <a href="#settings">UniDiSettings</a>
 

@@ -1,6 +1,6 @@
 ## Introduction 
 
-Another feature of UniDi that can open up interesting design possibilities is decorator bindings.  This allows you to easily implement the TODO:<a href="https://en.wikipedia.org/wiki/Decorator_pattern">decorator pattern</a>.
+Another feature of UniDi that can open up interesting design possibilities is decorator bindings.  This allows you to easily implement the [Decorator pattern](https://en.wikipedia.org/wiki/Decorator_pattern).
 
 ## Example
 
@@ -186,6 +186,6 @@ Where:
 
 * **DecoratorType** = The decorator class.  This should be a concrete type and also should take as an injected parameter/field an object of type ContractType.
 
-The other values have the same effect described TODO: <a href="../README.md#binding">here</a>.
+The other values have the same effect described [here](../Basic%20Principles/Binding#the-bind-command-in-full).
 
-Note that we can define any From construction method we want here - we don't have to default to FromNew like in the examples above. Decorator Bindings
+_Note that we can define any `From` construction method we want here - we don't have to default to `FromNew` like in the examples above._
