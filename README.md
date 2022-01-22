@@ -47,8 +47,7 @@ unidi.github.io
 |   |-- 04-Advanced
 |   |-- 05-Extensions
 |   |-- 200-CheatSheet.md
-|   |-- Docusaur-Docs
-|   `-- intro.md
+|   `-- index.md
 ```
 
 ### Documentation sources

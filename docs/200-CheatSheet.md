@@ -2,7 +2,7 @@
 
 Below are a bunch of randomly assorted examples of bindings that you might include in one of your installers.
 
-For more examples, you may also be interested in reading some of the Unit tests (TODO: see `UniDi/OptionalExtras/UnitTests` and `UniDi/OptionalExtras/IntegrationTests` directories)
+<!-- For more examples, you may also be interested in reading some of the Unit tests (TODO: see `UniDi/OptionalExtras/UnitTests` and `UniDi/OptionalExtras/IntegrationTests` directories) -->
 
 ```csharp
 
