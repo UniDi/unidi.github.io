@@ -1,4 +1,4 @@
-## Installers Cheat-Sheet
+## Installers CheatSheet
 
 Below are a bunch of randomly assorted examples of bindings that you might include in one of your installers.
 
